@@ -1,0 +1,296 @@
+:root {
+  --navy: #1d3557;
+  --navy-deep: #15263d;
+  --ink: #1b1f24;
+  --muted: #5c6770;
+  --line: #d9e0e6;
+  --bg: #f4f6f8;
+  --card: #fff;
+  --accent: #2a6f97;
+  --danger: #9b2c2c;
+  --shadow: 0 10px 30px rgba(21, 38, 61, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px 12px;
+  background: linear-gradient(180deg, #fff, var(--bg));
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2 {
+  margin: 4px 0 0;
+}
+
+.toolbar {
+  padding: 0 24px 16px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.search input,
+button {
+  font: inherit;
+}
+
+.search input {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: var(--navy);
+  color: #fff;
+  border-color: var(--navy);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+  padding: 0 24px 40px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fafafa;
+}
+
+.card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.35;
+  min-height: 2.7em;
+}
+
+.barcode {
+  font-family: ui-monospace, Consolas, monospace;
+  color: var(--muted);
+  font-size: 13px;
+  direction: ltr;
+  text-align: right;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty button,
+.cart-toggle,
+.drawer-actions button,
+.text-btn {
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.qty button {
+  width: 36px;
+  height: 36px;
+  background: var(--navy);
+  color: #fff;
+}
+
+.qty span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cart-toggle,
+.primary {
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 16px;
+}
+
+.badge {
+  display: inline-flex;
+  min-width: 22px;
+  justify-content: center;
+  margin-right: 8px;
+  background: #fff;
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 0 6px;
+  font-weight: 700;
+}
+
+.status {
+  padding: 0 24px;
+  color: var(--muted);
+}
+
+.drawer {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 0;
+  width: min(420px, 100vw);
+  background: #fff;
+  z-index: 20;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  overflow: auto;
+}
+
+.drawer-head,
+.cart-row,
+.drawer-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.cart-row {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+}
+
+.cart-row strong {
+  display: block;
+}
+
+.drawer-actions {
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.drawer-actions button {
+  background: #e8eef3;
+  padding: 10px 12px;
+}
+
+.danger {
+  color: var(--danger);
+}
+
+.text-btn {
+  background: transparent;
+}
+
+.preview {
+  background: var(--navy-deep);
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(21, 38, 61, 0.35);
+  z-index: 15;
+}
+
+.toast {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 20px;
+  margin: auto;
+  width: fit-content;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  z-index: 30;
+}
+
+@media (max-width: 700px) {
+  .top,
+  .toolbar,
+  .grid,
+  .status {
+    padding-inline: 14px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
