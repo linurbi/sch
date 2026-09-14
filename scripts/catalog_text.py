@@ -64,3 +64,25 @@ def clean_name(name: str, brand: str) -> str:
     if lead:
         name = f"{name[lead.end():]} {lead.group(1)}"
     return re.sub(r"\s+", " ", name).strip(" ,.-|/\\")
+
+
+def is_ocr_noise(token: str) -> bool:
+    """Drop tokens RapidOCR invents on candy packaging photos."""
+    t = token.strip()
+    if not t or t.startswith("!"):
+        return True
+    if re.fullmatch(r"[!UTtn]+", t):
+        return True
+    letters = re.sub(r"[^A-Za-z]", "", t)
+    # Keep size codes (S, L, XL, x) and short tokens.
+    if len(letters) < 5:
+        return False
+    if letters and not re.search(r"[aeiouyAEIOUY]", letters):
+        return True
+    return False
+
+
+def scrub_ocr_name(name: str, brand: str) -> str:
+    parts = [p for p in name.split() if not is_ocr_noise(p)]
+    cleaned = clean_name(" ".join(parts), brand)
+    return cleaned or brand or name

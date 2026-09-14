@@ -14,7 +14,7 @@ import requests
 from PIL import Image
 from rapidocr_onnxruntime import RapidOCR
 
-from catalog_text import clean_name, normalize_space
+from catalog_text import clean_name, is_ocr_noise, normalize_space
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -31,7 +31,12 @@ SKU_PACK_RE = re.compile(
     r"(?P<pack>\d{1,3}\s*[-–xX]\s*\d{1,5}(?:\s*[-–xX]\s*\d{1,5}){0,2})",
     re.S,
 )
-PAGE_TAIL_RE = re.compile(r"(\d{1,3})\s+(\d{1,3})\s*$")
+# Two page numbers at the end of a spread, e.g. "28 29" or "47 46 חדש!".
+# Require they are consecutive catalog pages so pack sizes like "1248 64" do not match.
+PAGE_PAIR_RE = re.compile(
+    r"(?<!\d)(\d{1,3})(?!\d)\s+(?<!\d)(\d{1,3})(?!\d)(?:\s+חדש!?)*\s*$"
+)
+PAGE_SINGLE_RE = re.compile(r"(?<!\d)(\d{1,3})(?!\d)(?:\s+חדש!?)*\s*$")
 TOC_HREF_RE = re.compile(r"\./(\d{1,3})-(\d{1,3})/")
 DIGITS_RE = re.compile(r"\D+")
 SKIP_BRANDS = {"אודות", "עמוד ראשי", "עמוד אחורי", "צור קשר"}
@@ -266,16 +271,41 @@ def ocr_ean_from_tile(bgr: np.ndarray, footer: tuple[int, int, int, int], ocr: R
 
 
 def save_product_image(bgr: np.ndarray, footer: tuple[int, int, int, int], barcode: str) -> str:
-    x, y, w, h = footer
-    top = max(0, y - 520)
-    crop = bgr[top : y + h, x : x + w]
     rel = f"data/images/{barcode}.jpg"
     dest = ROOT / rel
     dest.parent.mkdir(parents=True, exist_ok=True)
+    if dest.exists():
+        return rel
+    x, y, w, h = footer
+    top = max(0, y - 520)
+    crop = bgr[top : y + h, x : x + w]
     if crop.size:
         rgb = cv2.cvtColor(crop, cv2.COLOR_BGR2RGB)
-        Image.fromarray(rgb).save(dest, quality=82, optimize=True)
+        try:
+            Image.fromarray(rgb).save(dest, quality=82, optimize=True)
+        except OSError:
+            # Windows can lock a file the local HTTP server is serving.
+            try:
+                Image.fromarray(rgb).save(dest, quality=82)
+            except OSError:
+                pass
     return rel
+
+
+def pages_from_paragraph(text: str) -> set[int]:
+    pair = PAGE_PAIR_RE.search(text)
+    if pair:
+        a, b = int(pair.group(1)), int(pair.group(2))
+        if 1 <= a <= 150 and 1 <= b <= 150 and abs(a - b) == 1:
+            return {a, b}
+    single = PAGE_SINGLE_RE.search(text)
+    if single:
+        n = int(single.group(1))
+        if 1 <= n <= 150:
+            other = n + 1 if n % 2 == 0 else n - 1
+            if 1 <= other <= 150:
+                return {n, other}
+    return set()
 
 
 def paragraph_for_image(
@@ -283,14 +313,50 @@ def paragraph_for_image(
 ) -> str | None:
     left, right = spread_from_image(image_no)
     for text in paragraphs:
-        tail = PAGE_TAIL_RE.search(text)
-        if not tail:
-            continue
-        a, b = int(tail.group(1)), int(tail.group(2))
-        pages = {a, b}
+        pages = pages_from_paragraph(text)
         if left in pages or right in pages:
             return text
     return None
+
+
+def name_from_ocr_texts(texts: list[str], brand: str) -> str:
+    """Build a short label from OCR on the product photo when HTML has no name."""
+    words: list[str] = []
+    seen: set[str] = set()
+    for raw in texts:
+        token = raw.strip()
+        if not token or find_ean([token]):
+            continue
+        if is_ocr_noise(token) or re.fullmatch(r"[\d.\-%\"']+", token):
+            continue
+        if len(token) < 2:
+            continue
+        key = token.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        words.append(token)
+    if not words:
+        return brand or "מוצר"
+    composed = clean_name(" ".join(words[:6]), brand)
+    if brand and brand not in composed and not composed.startswith(brand):
+        composed = f"{brand} {composed}"
+    return composed
+
+
+def ocr_tile_texts(
+    bgr: np.ndarray, footer: tuple[int, int, int, int], ocr: RapidOCR
+) -> list[str]:
+    x, y, w, h = footer
+    top = max(0, y - 480)
+    crop = bgr[top : y + h, x : x + w]
+    if crop.size == 0:
+        return []
+    tmp = CACHE_DIR / "_tile_ocr.jpg"
+    rgb = cv2.cvtColor(crop, cv2.COLOR_BGR2RGB)
+    Image.fromarray(rgb).save(tmp, quality=92)
+    result, _ = ocr(str(tmp))
+    return [item[1] for item in result] if result else []
 
 
 def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
@@ -338,37 +404,35 @@ def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
             flush=True,
         )
 
-        pairable = named if named and abs(len(usable) - len(named)) <= 1 else []
-        pairs = min(len(usable), len(pairable)) if pairable else 0
         used_barcodes: set[str] = set()
-
-        if pairs:
-            for (footer, ean), info in zip(usable, pairable):
-                if not ean or ean in used_barcodes:
-                    continue
-                used_barcodes.add(ean)
-                image = save_product_image(bgr, footer, ean)
-                products.append(
-                    Product(
-                        name=info["name"],
-                        barcode=ean,
-                        sku=info["sku"],
-                        brand=info["brand"] or brand,
-                        catalog=cat_id,
-                        page=right,
-                        image=image,
-                        barcode_source="ean",
-                    )
-                )
-
-        for footer, ean in usable:
+        # Same-spread zip is safe even when the counts differ: leftover tiles
+        # get a name from the product photo instead of a blank brand label.
+        for (footer, ean), info in zip(usable, named):
             if not ean or ean in used_barcodes:
                 continue
             used_barcodes.add(ean)
             image = save_product_image(bgr, footer, ean)
             products.append(
                 Product(
-                    name=brand or "מוצר",
+                    name=info["name"],
+                    barcode=ean,
+                    sku=info["sku"],
+                    brand=info["brand"] or brand,
+                    catalog=cat_id,
+                    page=right,
+                    image=image,
+                    barcode_source="ean",
+                )
+            )
+
+        leftovers = [(box, ean) for box, ean in usable if ean and ean not in used_barcodes]
+        for footer, ean in leftovers:
+            used_barcodes.add(ean)
+            image = save_product_image(bgr, footer, ean)
+            ocr_name = name_from_ocr_texts(ocr_tile_texts(bgr, footer, ocr), brand)
+            products.append(
+                Product(
+                    name=ocr_name,
                     barcode=ean,
                     sku="",
                     brand=brand,
@@ -382,14 +446,31 @@ def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
     return products
 
 
+def name_quality(product: Product) -> int:
+    name = (product.name or "").strip()
+    brand = (product.brand or "").strip()
+    if not name or name == brand:
+        return 0
+    return len(name)
+
+
 def merge_products(all_products: list[Product]) -> list[Product]:
     by_barcode: dict[str, Product] = {}
     for product in all_products:
         current = by_barcode.get(product.barcode)
-        if current is None or product.catalog > current.catalog:
-            if current and (not product.name or product.name == product.brand):
-                product.name = current.name or product.name
+        if current is None:
             by_barcode[product.barcode] = product
+            continue
+        newer = product.catalog >= current.catalog
+        better_name = name_quality(product) > name_quality(current)
+        if newer:
+            if not better_name and name_quality(current):
+                product.name = current.name
+                product.sku = product.sku or current.sku
+            by_barcode[product.barcode] = product
+        elif better_name:
+            current.name = product.name
+            current.sku = current.sku or product.sku
     items = list(by_barcode.values())
     items.sort(key=lambda p: (p.brand, p.name, p.barcode))
     return items
