@@ -11,36 +11,6 @@
   "count": 809,
   "products": [
     {
-      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 לימון",
-      "barcode": "132596",
-      "sku": "132596",
-      "brand": "אג'קס",
-      "catalog": "2025",
-      "page": 25,
-      "image": "data/pdf-images/132596.jpg",
-      "barcode_source": "sku"
-    },
-    {
-      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 היביסקוס",
-      "barcode": "8718951345119",
-      "sku": "132973",
-      "brand": "אג'קס",
-      "catalog": "2025",
-      "page": 25,
-      "image": "data/pdf-images/132973.jpg",
-      "barcode_source": "ean"
-    },
-    {
-      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 לבנדר",
-      "barcode": "132353",
-      "sku": "132353",
-      "brand": "אג'קס",
-      "catalog": "2025",
-      "page": 25,
-      "image": "data/pdf-images/132353.jpg",
-      "barcode_source": "sku"
-    },
-    {
       "name": "אג'קס חגיגת הפרחים אפרסק ליטר1.5",
       "barcode": "8718951731202",
       "sku": "131325",
@@ -62,13 +32,13 @@
     },
     {
       "name": "אג'קס חגיגת הפרחים ורד הבוקר ליטר1.5",
-      "barcode": "129030",
+      "barcode": "8714789402932",
       "sku": "129030",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 25,
       "image": "data/pdf-images/129030.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס חגיגת הפרחים לבנדר ליטר1",
@@ -112,53 +82,83 @@
     },
     {
       "name": "אג'קס חגיגת הפרחים פרחי אביב ליטר1.5",
-      "barcode": "129031",
+      "barcode": "8714789402970",
       "sku": "129031",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 25,
       "image": "data/pdf-images/129031.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס חגיגת הפרחים פרחים אדומים ליטר 1.5",
-      "barcode": "129029",
+      "barcode": "8714789402918",
       "sku": "129029",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 25,
       "image": "data/pdf-images/129029.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס חלונות 2 מ\"ל750 מארז זוג x",
-      "barcode": "127057",
+      "barcode": "7290000692456",
       "sku": "127057",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/127057.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס חלונות מ\"ל750",
-      "barcode": "126494",
+      "barcode": "8714789582764",
       "sku": "126494",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/126494.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
+    },
+    {
+      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 היביסקוס",
+      "barcode": "8718951345119",
+      "sku": "132973",
+      "brand": "אג'קס",
+      "catalog": "2025",
+      "page": 25,
+      "image": "data/pdf-images/132973.jpg",
+      "barcode_source": "ean"
+    },
+    {
+      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 לבנדר",
+      "barcode": "7290000692210",
+      "sku": "132353",
+      "brand": "אג'קס",
+      "catalog": "2025",
+      "page": 25,
+      "image": "data/pdf-images/132353.jpg",
+      "barcode_source": "ean"
+    },
+    {
+      "name": "אג'קס ניקוי כללי ורצפות עוצמת ה-7 ליטר2 לימון",
+      "barcode": "7290000692203",
+      "sku": "132596",
+      "brand": "אג'קס",
+      "catalog": "2025",
+      "page": 25,
+      "image": "data/pdf-images/132596.jpg",
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס ספריי טריגר אקונומיקה מ\"ל500",
-      "barcode": "121216",
+      "barcode": "8718951160897",
       "sku": "121216",
       "brand": "אג'קס",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/121216.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אג'קס שירותים מ\"ל מארז זוגות750",
@@ -262,13 +262,13 @@
     },
     {
       "name": "או.בה פרוקומפורט מיני יח'32",
-      "barcode": "127959",
+      "barcode": "3574660333466",
       "sku": "127959",
       "brand": "או.בה",
       "catalog": "2025",
       "page": 20,
       "image": "data/pdf-images/127959.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "או.בה פרוקומפורט נורמל יח' אריזה מוקטנת8",
@@ -302,33 +302,33 @@
     },
     {
       "name": "או.בה קלאסי נורמל יח'32",
-      "barcode": "127957",
+      "barcode": "3574660089547",
       "sku": "127957",
       "brand": "או.בה",
       "catalog": "2025",
       "page": 20,
       "image": "data/pdf-images/127957.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "או.בה קלאסי סופר יח'32",
-      "barcode": "127958",
+      "barcode": "3574660115154",
       "sku": "127958",
       "brand": "או.בה",
       "catalog": "2025",
       "page": 20,
       "image": "data/pdf-images/127958.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "או.בה קלאסי סופר פלוס יח'32",
-      "barcode": "127924",
+      "barcode": "7290005680052",
       "sku": "127924",
       "brand": "או.בה",
       "catalog": "2025",
       "page": 20,
       "image": "data/pdf-images/127924.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "או.בה תחתוני מחזור 1 יחידה M-L",
@@ -432,43 +432,43 @@
     },
     {
       "name": "אלמקס מברשת שיניים לילדים זוג 6-3",
-      "barcode": "122035",
+      "barcode": "8718951187115",
       "sku": "122035",
       "brand": "אלמקס",
       "catalog": "2025",
       "page": 8,
       "image": "data/pdf-images/122035.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אלמקס משחת שיניים ג'וניור מ\"ל75",
-      "barcode": "130650",
+      "barcode": "7290102062195",
       "sku": "130650",
       "brand": "אלמקס",
       "catalog": "2025",
       "page": 8,
       "image": "data/pdf-images/130650.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אלמקס משחת שיניים ילדים מ\"ל75",
-      "barcode": "129036",
+      "barcode": "7290000803067",
       "sku": "129036",
       "brand": "אלמקס",
       "catalog": "2025",
       "page": 8,
       "image": "data/pdf-images/129036.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אלמקס משחת שיניים למניעת עששת מ\"ל100",
-      "barcode": "130641",
+      "barcode": "7290102060979",
       "sku": "130641",
       "brand": "אלמקס",
       "catalog": "2025",
       "page": 8,
       "image": "data/pdf-images/130641.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אלמקס משחת שיניים רגישות מ\"ל75",
@@ -482,23 +482,23 @@
     },
     {
       "name": "אלמקס שטיפת פה מ\"ל400",
-      "barcode": "131150",
+      "barcode": "7290000804484",
       "sku": "131150",
       "brand": "אלמקס",
       "catalog": "2025",
       "page": 8,
       "image": "data/pdf-images/131150.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בטיסט שמפו יבש בניחוח דובדבן מ\"ל200",
-      "barcode": "126854",
+      "barcode": "5010724526798",
       "sku": "126854",
       "brand": "בטיסט",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/126854.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בטיסט שמפו יבש בניחוח טרופי מ\"ל200",
@@ -512,23 +512,23 @@
     },
     {
       "name": "בטיסט שמפו יבש בניחוח פריחה אביבית מ\"ל200",
-      "barcode": "126852",
+      "barcode": "5010724527375",
       "sku": "126852",
       "brand": "בטיסט",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/126852.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בטיסט שמפו יבש בניחוח קלאסי מ\"ל200",
-      "barcode": "126851",
+      "barcode": "5010724527481",
       "sku": "126851",
       "brand": "בטיסט",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/126851.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בטיסט שמפו יבש עם צבע חום בהיר מ\"ל200",
@@ -582,23 +582,23 @@
     },
     {
       "name": "בלונס מקלוני כותנה יח' 200",
-      "barcode": "101108",
+      "barcode": "7290002730521",
       "sku": "101108",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/101108.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס מקלוני כותנה יח'200 X 2",
-      "barcode": "101109",
+      "barcode": "7290004078263",
       "sku": "101109",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/101109.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס פדים אובליים להסרת איפור יח' 60",
@@ -612,23 +612,23 @@
     },
     {
       "name": "בלונס פדים להסרת איפור יח'80",
-      "barcode": "101107",
+      "barcode": "7290002730538",
       "sku": "101107",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/101107.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס פדים להסרת איפור יח'80 X 3",
-      "barcode": "101061",
+      "barcode": "7290003387410",
       "sku": "101061",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/101061.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס פדים להסרת איפור מועשרים יח'80 X 3 בפרוטאין משי",
@@ -642,33 +642,33 @@
     },
     {
       "name": "גפן-בלונס פסי צמר גר'100",
-      "barcode": "131231",
+      "barcode": "7290002730941",
       "sku": "131231",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/131231.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "גפן-עננים צמר גר'100",
-      "barcode": "131233",
+      "barcode": "7290003475124",
       "sku": "131233",
       "brand": "בלונס",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/131233.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס בייבי מקלוני כותנה לתינוק יח'50",
-      "barcode": "115790",
+      "barcode": "7290103128739",
       "sku": "115790",
       "brand": "בלונס בייבי",
       "catalog": "2025",
       "page": 24,
       "image": "data/pdf-images/115790.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלונס בייבי רפידות הנקה יח'50 L",
@@ -762,23 +762,23 @@
     },
     {
       "name": "1 'ברילה קפליני מס גר'500",
-      "barcode": "130138",
+      "barcode": "8076800195019",
       "sku": "130138",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130138.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "13 'ברילה בבטה מס גר'500",
-      "barcode": "130104",
+      "barcode": "8076800195132",
       "sku": "130104",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130104.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "13 'ברילה בבטה מס ק\"ג5 מוסדי",
@@ -792,53 +792,53 @@
     },
     {
       "name": "ברילה בוקטיני מס' גר'500 9",
-      "barcode": "130252",
+      "barcode": "8076800315097",
       "sku": "130252",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130252.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה בסיס לבולונז גר'400",
-      "barcode": "129312",
+      "barcode": "8076809513654",
       "sku": "129312",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129312.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה גירנדולה גר'500",
-      "barcode": "130136",
+      "barcode": "8076809512268",
       "sku": "130136",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130136.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה חיטה מלאה ספגטי מס' גר'500 5",
-      "barcode": "123564",
+      "barcode": "8076809529419",
       "sku": "123564",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/123564.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה חיטה מלאה פנה רגטה גר'500",
-      "barcode": "123539",
+      "barcode": "8076809529433",
       "sku": "123539",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/123539.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה טורטליוני גר'500",
@@ -852,153 +852,153 @@
     },
     {
       "name": "ברילה טליאטלה גר'500",
-      "barcode": "100230",
+      "barcode": "8076809523714",
       "sku": "100230",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/100230.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה לזניה גר'500",
-      "barcode": "130522",
+      "barcode": "8076809523738",
       "sku": "130522",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130522.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה מקרוני גר'500",
-      "barcode": "130105",
+      "barcode": "8076808050440",
       "sku": "130105",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130105.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה ספגטוני מס' גר'500 7",
-      "barcode": "130251",
+      "barcode": "8076808150072",
       "sku": "130251",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130251.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה ספגטי ללא גלוטן גר'400",
-      "barcode": "131009",
+      "barcode": "8076809545440",
       "sku": "131009",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/131009.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה ספגטי מס' גר'500 5",
-      "barcode": "130135",
+      "barcode": "8076800195057",
       "sku": "130135",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130135.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה ספגטי מס' ק\"ג5 מוסדי 5",
-      "barcode": "100232",
+      "barcode": "8076800035056",
       "sku": "100232",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/100232.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה ספגטיני מס' גר'500 3",
-      "barcode": "130134",
+      "barcode": "8076800195033",
       "sku": "130134",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130134.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פוזילי גר'500",
-      "barcode": "130075",
+      "barcode": "8076802085981",
       "sku": "130075",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130075.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פוזילי ללא גלוטן גר'400",
-      "barcode": "124643",
+      "barcode": "8076809545464",
       "sku": "124643",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/124643.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פנה טריקולור גר'500",
-      "barcode": "124203",
+      "barcode": "8076809501415",
       "sku": "124203",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/124203.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פנה רגטה גר'500",
-      "barcode": "130113",
+      "barcode": "8076802085738",
       "sku": "130113",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130113.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פנה רגטה מס' ק\"ג5 מוסדי 73",
-      "barcode": "100235",
+      "barcode": "8076800035735",
       "sku": "100235",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/100235.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פנה ריגטה ללא גלוטן גר'400",
-      "barcode": "124644",
+      "barcode": "8076809545457",
       "sku": "124644",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/124644.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פפרדלה ביצים גר'250",
-      "barcode": "100227",
+      "barcode": "8076809514774",
       "sku": "100227",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/100227.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה פרפלה גר'500",
@@ -1012,63 +1012,63 @@
     },
     {
       "name": "ברילה קונצילה ריגטה גר'500",
-      "barcode": "130539",
+      "barcode": "8076802085936",
       "sku": "130539",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130539.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה קנלוני גר'250",
-      "barcode": "130726",
+      "barcode": "8076808070882",
       "sku": "130726",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 38,
       "image": "data/pdf-images/130726.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה רוטב ארביאטה גר'400",
-      "barcode": "129311",
+      "barcode": "8076809513388",
       "sku": "129311",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129311.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה רוטב בזיליקום גר'400",
-      "barcode": "129314",
+      "barcode": "8076809513739",
       "sku": "129314",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129314.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה רוטב טוסקנה גר'400",
-      "barcode": "129313",
+      "barcode": "8076809523561",
       "sku": "129313",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129313.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה רוטב נפולטנה גר'400",
-      "barcode": "129315",
+      "barcode": "8076809513692",
       "sku": "129315",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129315.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ברילה רוטב עגבניות לפיצה גר'400",
@@ -1082,13 +1082,13 @@
     },
     {
       "name": "ברילה רוטב פומודורו גר'400",
-      "barcode": "129316",
+      "barcode": "8076809513395",
       "sku": "129316",
       "brand": "ברילה",
       "catalog": "2025",
       "page": 39,
       "image": "data/pdf-images/129316.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לזניה ללא גלוטן גר'250",
@@ -1102,13 +1102,13 @@
     },
     {
       "name": "ג'ונסונס בייבי אל סבון אמבט מ\"ל חדש750",
-      "barcode": "123246",
+      "barcode": "3574669908481",
       "sku": "123246",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123246.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי אל סבון וקצף אמבט מ\"ל750",
@@ -1122,23 +1122,23 @@
     },
     {
       "name": "ג'ונסונס בייבי אל סבון לרחצה עדינה מ\"ל חדש750",
-      "barcode": "123247",
+      "barcode": "3574669908948",
       "sku": "123247",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123247.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי מרכך טיפות של ברק מ\"ל500",
-      "barcode": "128509",
+      "barcode": "3574669908245",
       "sku": "128509",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/128509.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי משחת החתלה מ\"ל100",
@@ -1152,23 +1152,23 @@
     },
     {
       "name": "ג'ונסונס בייבי סבון לפני שינה מ\"ל חדש750",
-      "barcode": "123244",
+      "barcode": "3574669908665",
       "sku": "123244",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123244.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי ספריי קשרים טיפות של ברק מ\"ל200",
-      "barcode": "123255",
+      "barcode": "3574669909822",
       "sku": "123255",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123255.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי שמן אלוורה מ\"ל300",
@@ -1192,23 +1192,23 @@
     },
     {
       "name": "ג'ונסונס בייבי שמן מ\"ל חדש300",
-      "barcode": "123289",
+      "barcode": "3574669909204",
       "sku": "123289",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 16,
       "image": "data/pdf-images/123289.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי שמן מ\"ל חדש500",
-      "barcode": "123288",
+      "barcode": "3574660058857",
       "sku": "123288",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 16,
       "image": "data/pdf-images/123288.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי שמפו גולד מ\"ל חדש750",
@@ -1242,53 +1242,53 @@
     },
     {
       "name": "ג'ונסונס בייבי שמפו קמומיל מ\"ל חדש750",
-      "barcode": "130028",
+      "barcode": "3574669907767",
       "sku": "130028",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/130028.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי תחליב מ\"ל חדש500",
-      "barcode": "130821",
+      "barcode": "3574661425696",
       "sku": "130821",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/130821.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי תחליב מגע כותנה מ\"ל500",
-      "barcode": "123294",
+      "barcode": "3574661428055",
       "sku": "123294",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123294.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי תרחיץ ושמפו לתינוק מ\"ל חדש500",
-      "barcode": "123251",
+      "barcode": "3574661530697",
       "sku": "123251",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123251.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס בייבי תרחיץ ושמפו מגע כותנה מ\"ל500",
-      "barcode": "123253",
+      "barcode": "3574661427935",
       "sku": "123253",
       "brand": "ג'ונסונס",
       "catalog": "2025",
       "page": 15,
       "image": "data/pdf-images/123253.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ג'ונסונס תחליב לפני השינה מ\"ל500",
@@ -2012,53 +2012,53 @@
     },
     {
       "name": "ג'ל ורוד פרש7/24 ליידי ספיד סטיק Fresh Fusion פיוז'ן",
-      "barcode": "126904",
+      "barcode": "7290100653586",
       "sku": "126904",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/126904.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק אלוורה Aloe",
-      "barcode": "127052",
+      "barcode": "7290107975278",
       "sku": "127052",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127052.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ג'ל אלוורה Aloe",
-      "barcode": "120906",
+      "barcode": "7290107974301",
       "sku": "120906",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/120906.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ג'ל בסיסי מרענן Shower Fresh",
-      "barcode": "126902",
+      "barcode": "7290004078942",
       "sku": "126902",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/126902.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ג'ל פיור פרשנס Fure Freshness",
-      "barcode": "126894",
+      "barcode": "7290107975360",
       "sku": "126894",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/126894.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ג'ל פרו 5 Pro 5",
@@ -2072,53 +2072,53 @@
     },
     {
       "name": "ליידי ספיד סטיק דרמה פנינה Pearl",
-      "barcode": "127056",
+      "barcode": "7290111935817",
       "sku": "127056",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127056.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ללא סימן ורוד סטיק Shower Fresh XL",
-      "barcode": "127035",
+      "barcode": "7290101488316",
       "sku": "127035",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127035.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק ללא סימן ירוק סטיק Powder Fresh XL",
-      "barcode": "127867",
+      "barcode": "7290101488323",
       "sku": "127867",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127867.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק נערות ורוד סטיק Pink crush XL",
-      "barcode": "127033",
+      "barcode": "7290107975292",
       "sku": "127033",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127033.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק נערות תות מתוק Sweet strawberry XL סטיק",
-      "barcode": "127055",
+      "barcode": "7290107975285",
       "sku": "127055",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127055.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק פחם סטיק גר'45",
@@ -2152,53 +2152,53 @@
     },
     {
       "name": "ליידי ספיד סטיק פרש אסנס סחלב Fresh&Essence שחור רול און",
-      "barcode": "131499",
+      "barcode": "7290107970129",
       "sku": "131499",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 11,
       "image": "data/pdf-images/131499.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק פרש אסנס פרח Wild freesia XL הפרזיה סטיק",
-      "barcode": "127054",
+      "barcode": "7290103129392",
       "sku": "127054",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127054.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק פרש אסנס פריחת Cherry blossom סטיקXL הדובדבן",
-      "barcode": "127034",
+      "barcode": "7290105433985",
       "sku": "127034",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/127034.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק פרש אסנס פריחת Orchard blossom XL הפרדס סטיק",
-      "barcode": "121348",
+      "barcode": "7290103129408",
       "sku": "121348",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 12,
       "image": "data/pdf-images/121348.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק פרש פיוז'ון רול און Fresh Fusion",
-      "barcode": "131495",
+      "barcode": "7290101488248",
       "sku": "131495",
       "brand": "ליידי ספיד סטיק",
       "catalog": "2025",
       "page": 11,
       "image": "data/pdf-images/131495.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ליידי ספיד סטיק קול אגס ירוק מ\"ל 150",
@@ -2452,43 +2452,43 @@
     },
     {
       "name": "לרו תחליף קפה בטעם קרמל",
-      "barcode": "130994",
+      "barcode": "3067140243114",
       "sku": "130994",
       "brand": "לרו",
       "catalog": "2025",
       "page": 44,
       "image": "data/pdf-images/130994.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לרו תחליף קפה טבעי",
-      "barcode": "100319",
+      "barcode": "3067140013113",
       "sku": "100319",
       "brand": "לרו",
       "catalog": "2025",
       "page": 44,
       "image": "data/pdf-images/100319.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בצל-מאסטר שף מיני קרוטונים למרק שום גר'350",
-      "barcode": "124295",
+      "barcode": "7290013358462",
       "sku": "124295",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/124295.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "דגנים5 מאסטר שף עלי טורטיה גר'320",
-      "barcode": "131148",
+      "barcode": "7290107974066",
       "sku": "131148",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 32,
       "image": "data/pdf-images/131148.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף אורז בסמטי ק\"ג1",
@@ -2542,13 +2542,13 @@
     },
     {
       "name": "מאסטר שף אטריות אורז רחבות גר'400 מ\"מ5",
-      "barcode": "118988",
+      "barcode": "7290013358578",
       "sku": "118988",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 36,
       "image": "data/pdf-images/118988.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף אטריות ביצים דקות גר'340",
@@ -2632,33 +2632,33 @@
     },
     {
       "name": "מאסטר שף איטריות בינוניות גר'400",
-      "barcode": "130147",
+      "barcode": "7290107978347",
       "sku": "130147",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 32,
       "image": "data/pdf-images/130147.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף איטריות דקות גר'400",
-      "barcode": "130145",
+      "barcode": "7290107978330",
       "sku": "130145",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 32,
       "image": "data/pdf-images/130145.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף איטריות דקיקות גר'400",
-      "barcode": "130146",
+      "barcode": "7290107978323",
       "sku": "130146",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 32,
       "image": "data/pdf-images/130146.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף איטריות חיטה להקפצה גר'350",
@@ -2712,13 +2712,13 @@
     },
     {
       "name": "מאסטר שף חרדל דיז'ון גרגירים גר'370",
-      "barcode": "131815",
+      "barcode": "7290105439598",
       "sku": "131815",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 33,
       "image": "data/pdf-images/131815.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף חרדל דיז'ון לחיץ גר'260",
@@ -2732,13 +2732,13 @@
     },
     {
       "name": "מאסטר שף חרדל דיז'ון צרפתי גר'370",
-      "barcode": "119299",
+      "barcode": "7290105439581",
       "sku": "119299",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 33,
       "image": "data/pdf-images/119299.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף חרדל לחיץ גר'260",
@@ -2772,13 +2772,13 @@
     },
     {
       "name": "מאסטר שף מיונז הולנדי גר'481",
-      "barcode": "124290",
+      "barcode": "7290105439499",
       "sku": "124290",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 34,
       "image": "data/pdf-images/124290.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף מיונז לחיץ גר'435",
@@ -2862,13 +2862,13 @@
     },
     {
       "name": "מאסטר שף מיקסלט עם חמוציות גר'200",
-      "barcode": "125442",
+      "barcode": "7290013358516",
       "sku": "125442",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 32,
       "image": "data/pdf-images/125442.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף ממרח זיתי קלמטה גר'180",
@@ -2892,23 +2892,23 @@
     },
     {
       "name": "מאסטר שף ממרח מתובל ספייסי גר'250",
-      "barcode": "124236",
+      "barcode": "7290107974820",
       "sku": "124236",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 34,
       "image": "data/pdf-images/124236.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף ממרח מתובל שום גר'250",
-      "barcode": "124288",
+      "barcode": "7290107974837",
       "sku": "124288",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 34,
       "image": "data/pdf-images/124288.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף ממרח ספייסי לחיץ גר'466",
@@ -2972,13 +2972,13 @@
     },
     {
       "name": "מאסטר שף נודלס ביצים להקפצה גר'400",
-      "barcode": "130601",
+      "barcode": "7290013358585",
       "sku": "130601",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 36,
       "image": "data/pdf-images/130601.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף ניוקי גר'500 ייצור מיוחד אפיית ישראל ללא חשש חדש",
@@ -3002,23 +3002,23 @@
     },
     {
       "name": "מאסטר שף עגבניות קוביות גר' 400 3 x",
-      "barcode": "126401",
+      "barcode": "7290111933554",
       "sku": "126401",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 33,
       "image": "data/pdf-images/126401.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף עגבניות קצוצות דק גר' 400 3 x",
-      "barcode": "122109",
+      "barcode": "7290107973861",
       "sku": "122109",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 33,
       "image": "data/pdf-images/122109.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף עלי טורטיה חיטה מלאה גר'320",
@@ -3072,33 +3072,33 @@
     },
     {
       "name": "מאסטר שף פירורי לחם מוזהבים גר'320",
-      "barcode": "130385",
+      "barcode": "7290013358356",
       "sku": "130385",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/130385.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף פירורי לחם פנקו גר'300",
-      "barcode": "116070",
+      "barcode": "7290013358363",
       "sku": "116070",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/116070.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף פירורי לחם פנקו גר'300 בטעם שום",
-      "barcode": "116071",
+      "barcode": "7290013358370",
       "sku": "116071",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/116071.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף פירורי פנקו אקסטרה גר'300 קראנץ לבן",
@@ -3162,23 +3162,23 @@
     },
     {
       "name": "מאסטר שף קרוטונים אפויים לסלט גר'200 אקסטרה ארוכים",
-      "barcode": "124297",
+      "barcode": "7290013358448",
       "sku": "124297",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/124297.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף קרוטונים אפויים לסלט גר'200 עגבניות בזיליקום",
-      "barcode": "124308",
+      "barcode": "7290013358431",
       "sku": "124308",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/124308.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף קרוטונים למרק שום בצל גר'350",
@@ -3202,13 +3202,13 @@
     },
     {
       "name": "מאסטר שף קרם קוקוס פחית מ\"ל400",
-      "barcode": "119023",
+      "barcode": "7290013358493",
       "sku": "119023",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 37,
       "image": "data/pdf-images/119023.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף קרם קוקוס קרטונית מ\"ל250",
@@ -3382,33 +3382,33 @@
     },
     {
       "name": "מאסטר שף רוטב צ'ילי חריף מ\"ל700",
-      "barcode": "119000",
+      "barcode": "7290013358547",
       "sku": "119000",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 35,
       "image": "data/pdf-images/119000.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף רוטב צ'ילי מתוק מ\"ל300",
-      "barcode": "122539",
+      "barcode": "7290111933462",
       "sku": "122539",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 35,
       "image": "data/pdf-images/122539.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף רוטב צ'ילי מתוק מ\"ל700",
-      "barcode": "118999",
+      "barcode": "7290013358530",
       "sku": "118999",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 35,
       "image": "data/pdf-images/118999.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מאסטר שף רוטב שום גר'256",
@@ -3482,13 +3482,13 @@
     },
     {
       "name": "מאסטר שף תעורבת ציפוי נגטס גר'250",
-      "barcode": "123368",
+      "barcode": "7290111933561",
       "sku": "123368",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 31,
       "image": "data/pdf-images/123368.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מזון במה מדורגת",
@@ -3542,13 +3542,13 @@
     },
     {
       "name": "תבשיל אישי נודלס בטעם אסיאתי חריף גר'71",
-      "barcode": "133131",
+      "barcode": "7290121162548",
       "sku": "133131",
       "brand": "מאסטר שף",
       "catalog": "2025",
       "page": 37,
       "image": "data/pdf-images/133131.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תבשיל אישי נודלס בטעם פיקנטי גר'71",
@@ -3562,13 +3562,13 @@
     },
     {
       "name": "מנה שקדי מרק גר'400",
-      "barcode": "126221",
+      "barcode": "7290003514007",
       "sku": "126221",
       "brand": "מנה",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/126221.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "37% מקס ברנר טבלת שוקולד חלב מעולה",
@@ -3742,93 +3742,93 @@
     },
     {
       "name": "מרבה גודיס שוקולד חלב גר'150",
-      "barcode": "117924",
+      "barcode": "5601008200444",
       "sku": "117924",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117924.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה גודיס שוקולד לבן גר'150",
-      "barcode": "117923",
+      "barcode": "5601008200468",
       "sku": "117923",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117923.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה גודיס שוקולד מריר גר'150",
-      "barcode": "117925",
+      "barcode": "5601008200451",
       "sku": "117925",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117925.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס חצי מצופה יח'6 מארז",
-      "barcode": "121230",
+      "barcode": "8423207206501",
       "sku": "121230",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121230.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס לילדים עם שוקולד יח'6 חלב מארז",
-      "barcode": "121235",
+      "barcode": "8423207208680",
       "sku": "121235",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121235.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס לילדים עם שוקולד יח'6 לבן מארז",
-      "barcode": "121232",
+      "barcode": "8423207208697",
       "sku": "121232",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121232.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס ללא גלוטן יח'6 שוקולד חלב מארז",
-      "barcode": "121234",
+      "barcode": "8423207208260",
       "sku": "121234",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121234.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס מהדורה מיוחדת יח'6 שוקולד חלב מארז",
-      "barcode": "122366",
+      "barcode": "8423207209885",
       "sku": "122366",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/122366.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס מהדורה מיוחדת יח'6 שוקולד מריר מארז",
-      "barcode": "121233",
+      "barcode": "8423207208703",
       "sku": "121233",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121233.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס קידס פארטי יח'5 שוקולד חלב מארז",
@@ -3852,103 +3852,103 @@
     },
     {
       "name": "מרבה סלים דליס קריספי אוכמניות יח'5 גרם מארז125",
-      "barcode": "128633",
+      "barcode": "7290014525306",
       "sku": "128633",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/128633.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס קריספי שוקולד יח'5 גרם מארז125",
-      "barcode": "128624",
+      "barcode": "7290014525313",
       "sku": "128624",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/128624.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס קריספי תות יח'5 גרם מארז125",
-      "barcode": "128623",
+      "barcode": "7290014525290",
       "sku": "128623",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/128623.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס שוקולד חלב יח'6 מארז",
-      "barcode": "121228",
+      "barcode": "8423207206488",
       "sku": "121228",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121228.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס שוקולד לבן יח' 6 בטעם יוגורט מארז",
-      "barcode": "122871",
+      "barcode": "8423207210287",
       "sku": "122871",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/122871.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס שוקולד לבן יח'6 מארז",
-      "barcode": "121229",
+      "barcode": "8423207207362",
       "sku": "121229",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121229.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים דליס שוקולד מריר יח'6 מארז",
-      "barcode": "121231",
+      "barcode": "8423207206495",
       "sku": "121231",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/121231.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים פרוט בטעם יוגורט ופירות יער יח'5 מארז",
-      "barcode": "129689",
+      "barcode": "7290014525177",
       "sku": "129689",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/129689.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים פרוט בטעם יוגורט ותות יח'5 מארז",
-      "barcode": "129690",
+      "barcode": "7290014525016",
       "sku": "129690",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/129690.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים פרוט בטעם יוגורט ותפוח יח'5 מארז",
-      "barcode": "129688",
+      "barcode": "7290014525009",
       "sku": "129688",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 48,
       "image": "data/pdf-images/129688.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה סלים קרקר עם זיתים",
@@ -4002,13 +4002,13 @@
     },
     {
       "name": "מרבה עוגיות טריפל שוקולד צ'יפס גר'180",
-      "barcode": "117909",
+      "barcode": "8710502139017",
       "sku": "117909",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117909.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה עוגיות לימון ושוקולד צ'יפס גר'175 במרקם רך",
@@ -4022,23 +4022,23 @@
     },
     {
       "name": "מרבה עוגיות ממולאות קרם שוקולד גר'175",
-      "barcode": "117916",
+      "barcode": "8710502405204",
       "sku": "117916",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117916.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה עוגיות נוגטלי גר'175",
-      "barcode": "117912",
+      "barcode": "8710502470028",
       "sku": "117912",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/117912.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה עוגיות עם זיגוג בטעם קפה גר'200",
@@ -4092,13 +4092,13 @@
     },
     {
       "name": "מרבה עוגיות שוקולד צ'יפס גר'150",
-      "barcode": "119006",
+      "barcode": "8710502194825",
       "sku": "119006",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/119006.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה עוגיות שוקולד צ'יפס חמוציות גר'175 במרקם רך",
@@ -4122,13 +4122,13 @@
     },
     {
       "name": "מרבה עוגיות שוקולד צ'יפס רכות גר'175",
-      "barcode": "119220",
+      "barcode": "8710502064814",
       "sku": "119220",
       "brand": "מרבה",
       "catalog": "2025",
       "page": 57,
       "image": "data/pdf-images/119220.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרבה עוגיות שוקצ'יפס במילוי קרמל גר'150",
@@ -4242,23 +4242,23 @@
     },
     {
       "name": "מרידול מברשת שיניים אקסטרה סופט זוג",
-      "barcode": "129971",
+      "barcode": "8718951093331",
       "sku": "129971",
       "brand": "מרידול",
       "catalog": "2025",
       "page": 9,
       "image": "data/pdf-images/129971.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרידול מברשת שיניים זוג",
-      "barcode": "129487",
+      "barcode": "7290102060764",
       "sku": "129487",
       "brand": "מרידול",
       "catalog": "2025",
       "page": 9,
       "image": "data/pdf-images/129487.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרידול מברשת שיניים סנסטיב זוג",
@@ -4272,13 +4272,13 @@
     },
     {
       "name": "מרידול מברשת שיניים פרודונט אקספרט זוג",
-      "barcode": "129969",
+      "barcode": "8718951144064",
       "sku": "129969",
       "brand": "מרידול",
       "catalog": "2025",
       "page": 9,
       "image": "data/pdf-images/129969.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מרידול מי פה פרדונט אקספרט מ\"ל400",
@@ -4322,13 +4322,13 @@
     },
     {
       "name": "מרידול שטיפת פה מ\"ל400",
-      "barcode": "130474",
+      "barcode": "7290000803180",
       "sku": "130474",
       "brand": "מרידול",
       "catalog": "2025",
       "page": 9,
       "image": "data/pdf-images/130474.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "כדוריות בושם עוצמתיות לכביסה ניחוח גרם510 טבעי ורענן",
@@ -4352,23 +4352,23 @@
     },
     {
       "name": "מריטו ספריי לגיהוץ קל למגזר הדתי מ\"ל500",
-      "barcode": "114283",
+      "barcode": "7290000469638",
       "sku": "114283",
       "brand": "מריטו",
       "catalog": "2025",
       "page": 27,
       "image": "data/pdf-images/114283.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מריטו ספריי לגיהוץ קל מ\"ל500",
-      "barcode": "100364",
+      "barcode": "7290000469638",
       "sku": "100364",
       "brand": "מריטו",
       "catalog": "2025",
       "page": 27,
       "image": "data/pdf-images/100364.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": ")ניוטרוג'ינה תחליב גוף לעור יבש (מבושם מ\"ל400",
@@ -4392,23 +4392,23 @@
     },
     {
       "name": "ניוטרוג'ינה הסדרה הנורבגית קרם ידיים מ\"ל75 קליל",
-      "barcode": "129071",
+      "barcode": "3574660239829",
       "sku": "129071",
       "brand": "ניוטרוג'ינה",
       "catalog": "2025",
       "page": 21,
       "image": "data/pdf-images/129071.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ניוטרוג'ינה קרם ידיים הידרו בוסט מ\"ל 75",
-      "barcode": "123285",
+      "barcode": "3574661392486",
       "sku": "123285",
       "brand": "ניוטרוג'ינה",
       "catalog": "2025",
       "page": 21,
       "image": "data/pdf-images/123285.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ניוטרוג'ינה קרם ידיים מ\"ל75",
@@ -4422,13 +4422,13 @@
     },
     {
       "name": "ניוטרוג'ינה קרם רב שימושי מרגיע מ\"ל300",
-      "barcode": "130939",
+      "barcode": "3574660514643",
       "sku": "130939",
       "brand": "ניוטרוג'ינה",
       "catalog": "2025",
       "page": 21,
       "image": "data/pdf-images/130939.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ניוטרוג'ינה קרם רב שימושי מרוכז מ\"ל300",
@@ -4452,13 +4452,13 @@
     },
     {
       "name": "ניוטרוג'ינה תחליב גוף הידרו בוסט מ\"ל 400",
-      "barcode": "126286",
+      "barcode": "3574661391373",
       "sku": "126286",
       "brand": "ניוטרוג'ינה",
       "catalog": "2025",
       "page": 21,
       "image": "data/pdf-images/126286.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ניוטרוג'ינה תחליב גוף ללחות מוגברת מ\"ל 400",
@@ -4482,63 +4482,63 @@
     },
     {
       "name": "שפתון לחות עם מקדם הגנה SPF20",
-      "barcode": "129124",
+      "barcode": "3574660571769",
       "sku": "129124",
       "brand": "ניוטרוג'ינה",
       "catalog": "2025",
       "page": 21,
       "image": "data/pdf-images/129124.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תרסיס היגיינה והקלה לאף-סטרימר מ\"ל100",
-      "barcode": "120133",
+      "barcode": "3331300097214",
       "sku": "120133",
       "brand": "סטרימר",
       "catalog": "2025",
       "page": 17,
       "image": "data/pdf-images/120133.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תרסיס היגיינה והקלה לאף-סטרימר מ\"ל50",
-      "barcode": "120129",
+      "barcode": "3331300097221",
       "sku": "120129",
       "brand": "סטרימר",
       "catalog": "2025",
       "page": 17,
       "image": "data/pdf-images/120129.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תרסיס היגיינת אף לתינוק-סטרימר מ\"ל50",
-      "barcode": "120130",
+      "barcode": "3331300097238",
       "sku": "120130",
       "brand": "סטרימר",
       "catalog": "2025",
       "page": 17,
       "image": "data/pdf-images/120130.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תרסיס לאף סתום לתינוק-סטרימר מ\"ל50",
-      "barcode": "120132",
+      "barcode": "3331300097498",
       "sku": "120132",
       "brand": "סטרימר",
       "catalog": "2025",
       "page": 17,
       "image": "data/pdf-images/120132.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "תרסיס לאף סתום-סטרימר מ\"ל50",
-      "barcode": "120131",
+      "barcode": "3331300097382",
       "sku": "120131",
       "brand": "סטרימר",
       "catalog": "2025",
       "page": 17,
       "image": "data/pdf-images/120131.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "סלים דליס טופינג אגוזי לוז יח'5 מארז",
@@ -4612,13 +4612,13 @@
     },
     {
       "name": "ג'ל שחור קול נייט7/24 ספיד סטיק Cool Night",
-      "barcode": "129956",
+      "barcode": "7290103120658",
       "sku": "129956",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/129956.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק אקסטרים אינטנס ג'ל גר'85",
@@ -4652,53 +4652,53 @@
     },
     {
       "name": "ספיד סטיק בסיסי ירוק פאוור פרש סטיק Power Fresh",
-      "barcode": "127225",
+      "barcode": "7290000692135",
       "sku": "127225",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/127225.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק בסיסי ירוק רגיולר סטיק Regular",
-      "barcode": "127226",
+      "barcode": "7290003387205",
       "sku": "127226",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/127226.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק בסיסי קלאסיק סטיק Classic",
-      "barcode": "127080",
+      "barcode": "7290003387373",
       "sku": "127080",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/127080.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק ג'ל Active X5",
-      "barcode": "129945",
+      "barcode": "7290103129378",
       "sku": "129945",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/129945.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק ג'ל כח הטבע Power Of Nature",
-      "barcode": "129944",
+      "barcode": "7290107975346",
       "sku": "129944",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/129944.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק ג'ל ספורט Sport",
@@ -4712,23 +4712,23 @@
     },
     {
       "name": "ספיד סטיק ירוק רגיולר סטיק Regular גרם85 XL",
-      "barcode": "126874",
+      "barcode": "7290105434050",
       "sku": "126874",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/126874.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק כחול אושיין סרף סטיק Ocean Surf גרם85 XL",
-      "barcode": "126870",
+      "barcode": "7290105434067",
       "sku": "126870",
       "brand": "ספיד סטיק",
       "catalog": "2025",
       "page": 10,
       "image": "data/pdf-images/126870.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ספיד סטיק סנסטיב ג'ל גר'85",
@@ -4772,13 +4772,13 @@
     },
     {
       "name": "פולרטי חטיפי קרח ללא גלוטן מ\"ל400",
-      "barcode": "130908",
+      "barcode": "8002267002270",
       "sku": "130908",
       "brand": "פולרטי",
       "catalog": "2025",
       "page": 53,
       "image": "data/pdf-images/130908.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פולרטי חטיפי קרח קיץ שמח ללא גלוטן מ\"ל400",
@@ -4852,13 +4852,13 @@
     },
     {
       "name": "פומפדור חליטת צמחים מנטה",
-      "barcode": "113496",
+      "barcode": "7290002360278",
       "sku": "113496",
       "brand": "פומפדור",
       "catalog": "2025",
       "page": 41,
       "image": "data/pdf-images/113496.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פומפדור חליטת צמחים נענע",
@@ -4882,23 +4882,23 @@
     },
     {
       "name": "פומפדור חליטת צמחים קמומיל",
-      "barcode": "113495",
+      "barcode": "7290002360285",
       "sku": "113495",
       "brand": "פומפדור",
       "catalog": "2025",
       "page": 41,
       "image": "data/pdf-images/113495.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פומפדור חליטת צמחים שומר",
-      "barcode": "113518",
+      "barcode": "7290002360155",
       "sku": "113518",
       "brand": "פומפדור",
       "catalog": "2025",
       "page": 41,
       "image": "data/pdf-images/113518.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פומפדור חליטת תפוז ספרדי",
@@ -5022,53 +5022,53 @@
     },
     {
       "name": "פוף טבעות קלאסי גר'40",
-      "barcode": "132945",
+      "barcode": "7290111930935",
       "sku": "132945",
       "brand": "פוף",
       "catalog": "2025",
       "page": 30,
       "image": "data/pdf-images/132945.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פוף כוכבים בצל גר'40",
-      "barcode": "132946",
+      "barcode": "7290111930904",
       "sku": "132946",
       "brand": "פוף",
       "catalog": "2025",
       "page": 30,
       "image": "data/pdf-images/132946.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פוף כוכבים גריל אמריקאי גר'40 X",
-      "barcode": "132947",
+      "barcode": "7290111930898",
       "sku": "132947",
       "brand": "פוף",
       "catalog": "2025",
       "page": 30,
       "image": "data/pdf-images/132947.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פוף לבבות גריל גר'40",
-      "barcode": "132944",
+      "barcode": "7290111930928",
       "sku": "132944",
       "brand": "פוף",
       "catalog": "2025",
       "page": 30,
       "image": "data/pdf-images/132944.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פוף לבבות קלאסי גר'40",
-      "barcode": "132943",
+      "barcode": "7290111930911",
       "sku": "132943",
       "brand": "פוף",
       "catalog": "2025",
       "page": 30,
       "image": "data/pdf-images/132943.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פוף פופקורן בטעם חמאה למיקרו גר'360",
@@ -5152,63 +5152,63 @@
     },
     {
       "name": "כתום1- ב4 פלמוליב כלים מ\"ל750",
-      "barcode": "124753",
+      "barcode": "8714789797786",
       "sku": "124753",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124753.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב כלים שקוף אוקסי כחול מ\"ל750",
-      "barcode": "124900",
+      "barcode": "7290100658338",
       "sku": "124900",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124900.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב כלים שקוף לימון ליטר1.5",
-      "barcode": "124907",
+      "barcode": "8714789450315",
       "sku": "124907",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124907.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב כלים שקוף לימון מ\"ל750",
-      "barcode": "124904",
+      "barcode": "7290001305188",
       "sku": "124904",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124904.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב כלים שקוף קלאסי ליטר1.5",
-      "barcode": "124906",
+      "barcode": "8714789834467",
       "sku": "124906",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124906.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב כלים שקוף קלאסי מ\"ל750",
-      "barcode": "124905",
+      "barcode": "7290002730262",
       "sku": "124905",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124905.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב לומינוס שומר ים וארגן מ\"ל750",
@@ -5312,13 +5312,13 @@
     },
     {
       "name": "פלמוליב סבון ידיים אקווריום מ\"ל300",
-      "barcode": "130131",
+      "barcode": "7290107973038",
       "sku": "130131",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 14,
       "image": "data/pdf-images/130131.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב סבון ידיים היגיינה מ\"ל300",
@@ -5452,13 +5452,13 @@
     },
     {
       "name": "פלמוליב סבון נוזלי חלב זיתים מ\"ל750",
-      "barcode": "130742",
+      "barcode": "8714789733296",
       "sku": "130742",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 13,
       "image": "data/pdf-images/130742.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב סבון נוזלי חלב שקדים מ\"ל750",
@@ -5482,33 +5482,33 @@
     },
     {
       "name": "פלמוליב צילינדר לימון ליטר1",
-      "barcode": "124903",
+      "barcode": "7290004078270",
       "sku": "124903",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124903.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב צילינדר קלאסי ליטר1",
-      "barcode": "124902",
+      "barcode": "7290000692227",
       "sku": "124902",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124902.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב צילינדר תפוז וליים ליטר1",
-      "barcode": "124901",
+      "barcode": "8718951167094",
       "sku": "124901",
       "brand": "פלמוליב",
       "catalog": "2025",
       "page": 26,
       "image": "data/pdf-images/124901.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פלמוליב תחליב רחצה נטורלס זיתים מ\"ל500",
@@ -5612,63 +5612,63 @@
     },
     {
       "name": "פרי חטיף דגנים, אגוזים ושוקולד יח'5 מארז",
-      "barcode": "130997",
+      "barcode": "7290101486688",
       "sku": "130997",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/130997.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרי חטיף דגנים, תמרים וקינמון יח'5 מארז",
-      "barcode": "130989",
+      "barcode": "7290100659090",
       "sku": "130989",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/130989.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרי חטיף תמרים ושברי אגוזי לוז יח'5 מארז",
-      "barcode": "123438",
+      "barcode": "7290111936784",
       "sku": "123438",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/123438.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרי חטיף תמרים ושברי אגוזי קשיו יח'5 מארז",
-      "barcode": "131003",
+      "barcode": "7290105436382",
       "sku": "131003",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/131003.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרי חטיף תמרים ושברי בוטנים יח'5 מארז",
-      "barcode": "130988",
+      "barcode": "7290105431516",
       "sku": "130988",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/130988.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרי חטיף תמרים, אגוזים ושברי קקאו יח'5 מארז",
-      "barcode": "123441",
+      "barcode": "7290111937262",
       "sku": "123441",
       "brand": "פרי",
       "catalog": "2025",
       "page": 50,
       "image": "data/pdf-images/123441.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פרפקט טד אבקת מאצ'ה בטעם וניל גר'75",
@@ -5772,13 +5772,13 @@
     },
     {
       "name": "95% צ'וקטה שוקולד מריר גר'100",
-      "barcode": "133739",
+      "barcode": "7290122635836",
       "sku": "133739",
       "brand": "צ'וקטה",
       "catalog": "2026",
       "page": 48,
       "image": "data/pdf-images/133739.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ללא גלוטן48% 1/4 צ'וקטה שוקולד מריר גר' 400",
@@ -6262,13 +6262,13 @@
     },
     {
       "name": "צ'וקטה פתי בר גר'400",
-      "barcode": "126430",
+      "barcode": "7290018893845",
       "sku": "126430",
       "brand": "צ'וקטה",
       "catalog": "2025",
       "page": 46,
       "image": "data/pdf-images/126430.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "צ'וקטה קרקר במליחות מעודנת גר'500",
@@ -6292,13 +6292,13 @@
     },
     {
       "name": "צ'וקטה שוקולד ללא סוכר חלב גר'100",
-      "barcode": "133742",
+      "barcode": "7290122635782",
       "sku": "133742",
       "brand": "צ'וקטה",
       "catalog": "2026",
       "page": 48,
       "image": "data/pdf-images/133742.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "צ'וקטה שוקולד ללא סוכר חלב ושקדים גר'100",
@@ -6412,13 +6412,13 @@
     },
     {
       "name": "S 360 קולגייט מברשת זוג",
-      "barcode": "113859",
+      "barcode": "8714789218465",
       "sku": "113859",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/113859.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אדוונס ווייט360 קולגייט מברשת זוג",
@@ -6432,33 +6432,33 @@
     },
     {
       "name": "אופטיק וויט360 קולגייט מברשת זוג",
-      "barcode": "116669",
+      "barcode": "8714789831275",
       "sku": "116669",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/116669.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "אופטיק וויט360 קולגייט מברשת חשמלית סופט",
-      "barcode": "126309",
+      "barcode": "8714789835112",
       "sku": "126309",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/126309.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "באטמן+6 קולגייט משחת ילדים מ\"ל50",
-      "barcode": "130592",
+      "barcode": "7290006712981",
       "sku": "130592",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/130592.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "בלואי5-0 קולגייט משחת ילדים מ\"ל50",
@@ -6472,13 +6472,13 @@
     },
     {
       "name": "ברבי+6 קולגייט ילדים מ\"ל50",
-      "barcode": "130593",
+      "barcode": "7290107975544",
       "sku": "130593",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/130593.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "הארי פוטר+6 קולגייט משחת ילדים מ\"ל50",
@@ -6522,13 +6522,13 @@
     },
     {
       "name": "מיניונים+6 קולגייט ילדים מ\"ל50",
-      "barcode": "129507",
+      "barcode": "7290111931321",
       "sku": "129507",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/129507.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "מיניונים12-6 קולגייט מי פה לילדים מ\"ל250",
@@ -6542,33 +6542,33 @@
     },
     {
       "name": "מניונים6+ קולגייט מברשת ילדים",
-      "barcode": "121479",
+      "barcode": "8693495051002",
       "sku": "121479",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/121479.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "סנסיטיב360 קולגייט מברשת זוג",
-      "barcode": "118369",
+      "barcode": "8714789303925",
       "sku": "118369",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/118369.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פחם זהב360 קולגייט מברשת זוג",
-      "barcode": "120223",
+      "barcode": "7290107973311",
       "sku": "120223",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/120223.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "פחם360 קולגייט מברשת זוג",
@@ -6592,13 +6592,13 @@
     },
     {
       "name": "קולגייט אדומה ג'ל פסים מרעננים מ\"ל100",
-      "barcode": "130459",
+      "barcode": "7290002730811",
       "sku": "130459",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 4,
       "image": "data/pdf-images/130459.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט אדומה הגנה מקסימלית מ\"ל100",
@@ -6612,13 +6612,13 @@
     },
     {
       "name": "קולגייט אופטיק וויט אקספרט וויט מ\"ל75",
-      "barcode": "130444",
+      "barcode": "7290111932502",
       "sku": "130444",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 3,
       "image": "data/pdf-images/130444.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט אופטיק וויט לאוהבי קפה מ\"ל75",
@@ -6632,13 +6632,13 @@
     },
     {
       "name": "קולגייט אופטיק וויט ספרקלינג וויט מ\"ל75",
-      "barcode": "122938",
+      "barcode": "7891024124826",
       "sku": "122938",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 3,
       "image": "data/pdf-images/122938.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט אופטיק וויט פחם מ\"ל75",
@@ -6722,13 +6722,13 @@
     },
     {
       "name": "קולגייט טריפל אקשן מ\"ל75",
-      "barcode": "119533",
+      "barcode": "7891024030974",
       "sku": "119533",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 4,
       "image": "data/pdf-images/119533.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשות ילדים גדולים זוג 6-9",
@@ -6772,33 +6772,33 @@
     },
     {
       "name": "קולגייט מברשת אקסטרה קלין",
-      "barcode": "100641",
+      "barcode": "6001067022558",
       "sku": "100641",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/100641.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת אקסטרה קלין רביעייה",
-      "barcode": "100643",
+      "barcode": "8714789177229",
       "sku": "100643",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/100643.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת אקסטרה קלין שלישייה",
-      "barcode": "114881",
+      "barcode": "6001067024446",
       "sku": "114881",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/114881.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת ג'נטל קלין סנסיטיב שלישייה",
@@ -6852,13 +6852,13 @@
     },
     {
       "name": "קולגייט מברשת ילדים 2-0",
-      "barcode": "117499",
+      "barcode": "6281001510390",
       "sku": "117499",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/117499.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת ילדים באטמן סוללות",
@@ -6992,33 +6992,33 @@
     },
     {
       "name": "קולגייט מברשת סלים סופט זהב זוג",
-      "barcode": "130118",
+      "barcode": "8693495051255",
       "sku": "130118",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/130118.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת סלים סופט זוג",
-      "barcode": "129491",
+      "barcode": "8693495037853",
       "sku": "129491",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/129491.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת סלים סופט פחם זוג",
-      "barcode": "130238",
+      "barcode": "8693495041461",
       "sku": "130238",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 6,
       "image": "data/pdf-images/130238.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מברשת פרימייר קלין רביעייה",
@@ -7062,13 +7062,13 @@
     },
     {
       "name": "קולגייט מי פה אופטיק וויט מ\"ל500",
-      "barcode": "122241",
+      "barcode": "7891024179482",
       "sku": "122241",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/122241.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מי פה אופטיק וייט סגול מ\"ל500",
@@ -7092,13 +7092,13 @@
     },
     {
       "name": "קולגייט מי פה טוטאל כחול פפרמינט מ\"ל500",
-      "barcode": "130801",
+      "barcode": "7290107971751",
       "sku": "130801",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/130801.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מי פה פלאקס ירוק מ\"ל500",
@@ -7112,13 +7112,13 @@
     },
     {
       "name": "קולגייט מי פה פלאקס כחול מ\"ל500",
-      "barcode": "130648",
+      "barcode": "7891024130063",
       "sku": "130648",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 7,
       "image": "data/pdf-images/130648.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט מקס וויט מ\"ל125",
@@ -7172,13 +7172,13 @@
     },
     {
       "name": "קולגייט משחת אופטיק וויט סטיין פייטר מ\"ל89 פרש ג'ל",
-      "barcode": "127866",
+      "barcode": "0350004583086",
       "sku": "127866",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 3,
       "image": "data/pdf-images/127866.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט משחת אופטיק וייט לומינוס מ\"ל75",
@@ -7252,13 +7252,13 @@
     },
     {
       "name": "קולגייט סמיילס ילדים גילאי מ\"ל50 5-2",
-      "barcode": "130642",
+      "barcode": "8718951170445",
       "sku": "130642",
       "brand": "קולגייט",
       "catalog": "2025",
       "page": 5,
       "image": "data/pdf-images/130642.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קולגייט סנסיטיב מולטי פרוטקשן מ\"ל75",
@@ -7372,83 +7372,83 @@
     },
     {
       "name": "קוקי תבנית אינגליש עם נייר אפייה יח'4",
-      "barcode": "123026",
+      "barcode": "7290111933998",
       "sku": "123026",
       "brand": "קוקי",
       "catalog": "2025",
       "page": 28,
       "image": "data/pdf-images/123026.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קוקי תבנית אלומיניום עם נייר אפייה יח'2 ענק",
-      "barcode": "121641",
+      "barcode": "7290107979191",
       "sku": "121641",
       "brand": "קוקי",
       "catalog": "2025",
       "page": 28,
       "image": "data/pdf-images/121641.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קוקי תבנית אלומיניום עם נייר אפייה יח'3 גדול",
-      "barcode": "121640",
+      "barcode": "7290107979184",
       "sku": "121640",
       "brand": "קוקי",
       "catalog": "2025",
       "page": 28,
       "image": "data/pdf-images/121640.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קראנצ'וס בצל גר'55",
-      "barcode": "129719",
+      "barcode": "7290111930799",
       "sku": "129719",
       "brand": "קראנצ'וס",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/129719.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קראנצ'וס ברביקיו גר'55",
-      "barcode": "129722",
+      "barcode": "7290111930805",
       "sku": "129722",
       "brand": "קראנצ'וס",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/129722.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קראנצ'וס גריל גר'55",
-      "barcode": "129723",
+      "barcode": "7290107978453",
       "sku": "129723",
       "brand": "קראנצ'וס",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/129723.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קראנצ'וס פיצה גר'55",
-      "barcode": "129720",
+      "barcode": "7290111930850",
       "sku": "129720",
       "brand": "קראנצ'וס",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/129720.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קראנצ'וס פלאפל גר'55",
-      "barcode": "129721",
+      "barcode": "7290107978460",
       "sku": "129721",
       "brand": "קראנצ'וס",
       "catalog": "2025",
       "page": 29,
       "image": "data/pdf-images/129721.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון אורגני כותון יח'30",
@@ -7482,13 +7482,13 @@
     },
     {
       "name": "קרפרי מגן תחתון כותון אלוורה יח'76",
-      "barcode": "114506",
+      "barcode": "3574660464368",
       "sku": "114506",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/114506.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון כותון טנגה יח'56",
@@ -7502,13 +7502,13 @@
     },
     {
       "name": "קרפרי מגן תחתון כותון טנגה מבושם יח'56",
-      "barcode": "124514",
+      "barcode": "3574661554884",
       "sku": "124514",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/124514.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון כותון יח'100",
@@ -7532,13 +7532,13 @@
     },
     {
       "name": "קרפרי מגן תחתון כותון יח'76",
-      "barcode": "114503",
+      "barcode": "3574660464429",
       "sku": "114503",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/114503.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון כותון מבושם יח'100",
@@ -7572,43 +7572,43 @@
     },
     {
       "name": "קרפרי מגן תחתון כותון מבושם יח'76",
-      "barcode": "114505",
+      "barcode": "3574660464337",
       "sku": "114505",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/114505.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון פלוס לארג מבושם יח'48",
-      "barcode": "123837",
+      "barcode": "3574661487618",
       "sku": "123837",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/123837.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון פלוס לארג' יח'48",
-      "barcode": "123908",
+      "barcode": "3574661487625",
       "sku": "123908",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/123908.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון פלוס לארג' יח'64",
-      "barcode": "130512",
+      "barcode": "3574661487632",
       "sku": "130512",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/130512.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון פלוס לונג יח'40",
@@ -7622,33 +7622,33 @@
     },
     {
       "name": "קרפרי מגן תחתון פלוס לונג מבושם יח'40",
-      "barcode": "123838",
+      "barcode": "3574661487335",
       "sku": "123838",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/123838.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מגן תחתון פלוס נורמל יח' 56",
-      "barcode": "123786",
+      "barcode": "3574661487328",
       "sku": "123786",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 18,
       "image": "data/pdf-images/123786.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי מוס לשטיפה אינטימית מ\"ל150",
-      "barcode": "123515",
+      "barcode": "3574661504162",
       "sku": "123515",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 19,
       "image": "data/pdf-images/123515.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "קרפרי נורמל ארוזים אחד אחד יח'20",
@@ -7662,13 +7662,13 @@
     },
     {
       "name": "קרפרי שטיפה אינטימית אלוורה מ\"ל200",
-      "barcode": "123513",
+      "barcode": "3574661501901",
       "sku": "123513",
       "brand": "קרפרי",
       "catalog": "2025",
       "page": 19,
       "image": "data/pdf-images/123513.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "א. טונה ירקות גינה160x2 ריו מרה מארז",
@@ -7692,23 +7692,23 @@
     },
     {
       "name": "ריו מרה אינסלטיסימה ארוחה גר'160 מקסיקנית עם טונה",
-      "barcode": "131167",
+      "barcode": "8004030026018",
       "sku": "131167",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/131167.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה אינסלטיסימה ארוחת אורז עם גר'160 טונה",
-      "barcode": "131166",
+      "barcode": "8004030845046",
       "sku": "131166",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/131166.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה אינסלטיסימה ארוחת טונה עם גר'160 גרגרי חומוס",
@@ -7722,53 +7722,53 @@
     },
     {
       "name": "ריו מרה אינסלטיסימה ארוחת ירקות גר'160 גינה עם טונה",
-      "barcode": "131168",
+      "barcode": "8004030022010",
       "sku": "131168",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/131168.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה אינסלטיסימה ארוחת קוסקוס גר'160 עם טונה",
-      "barcode": "125768",
+      "barcode": "8004030860001",
       "sku": "125768",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/125768.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה טונה בשמן זית גר'160",
-      "barcode": "125769",
+      "barcode": "8004030044005",
       "sku": "125769",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/125769.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה טונה בשמן זית גר'160 x יחידות2 מארז",
-      "barcode": "125762",
+      "barcode": "8004030381681",
       "sku": "125762",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/125762.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה טונה בשמן זית גר'80 x יחידות3 מארז",
-      "barcode": "125760",
+      "barcode": "8004030344938",
       "sku": "125760",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/125760.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה טונה בשמן זית כתית מעולה גר'65 x יחידות3 מארז",
@@ -7792,13 +7792,13 @@
     },
     {
       "name": "ריו מרה טונה בשמן זית עם שום גר'160 ופלפל חריף",
-      "barcode": "127989",
+      "barcode": "8004030081024",
       "sku": "127989",
       "brand": "ריו מרה",
       "catalog": "2025",
       "page": 40,
       "image": "data/pdf-images/127989.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "ריו מרה טונה בשמן זית צ'ילי גר'65 x יחידות3 מארז",
@@ -7832,13 +7832,13 @@
     },
     {
       "name": "להבים לנשים עם עור4 שיק קוואטרו יח'3 רגיש",
-      "barcode": "126818",
+      "barcode": "4891228460242",
       "sku": "126818",
       "brand": "שיק",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126818.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לנפחXXL שמפו יבש מ\"ל200",
@@ -7852,43 +7852,43 @@
     },
     {
       "name": "לנשים עם עור רגיש2 שיק אקזקטה יח'10",
-      "barcode": "126821",
+      "barcode": "4891228430061",
       "sku": "126821",
       "brand": "שיק",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126821.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לנשים עם עור רגיש2 שיק אקזקטה יח'5",
-      "barcode": "126817",
+      "barcode": "4891228430054",
       "sku": "126817",
       "brand": "שיק",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126817.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לעור רגיש2 שיק אקזקטה יח'10",
-      "barcode": "112508",
+      "barcode": "4891228430047",
       "sku": "112508",
       "brand": "שיק",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/112508.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "לעור רגיש2 שיק אקזקטה יח'5",
-      "barcode": "112494",
+      "barcode": "4891228430030",
       "sku": "112494",
       "brand": "שיק",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/112494.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "נשים צבעוני2 שיק אקזקטה יח'10",
@@ -7902,13 +7902,13 @@
     },
     {
       "name": "סנס רביעיית סכיני גילוח5 שיק היידרו לעור רגיש",
-      "barcode": "122984",
+      "barcode": "4891228304478",
       "sku": "122984",
       "brand": "שיק",
       "catalog": "2025",
       "page": 23,
       "image": "data/pdf-images/122984.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "שיק היידרו סנס לגבר מארז יח5 + ידית",
@@ -8032,13 +8032,13 @@
     },
     {
       "name": "אשה חד\"פ3 אינטואישן אקסטרים יח'4",
-      "barcode": "130823",
+      "barcode": "4891228430092",
       "sku": "130823",
       "brand": "שיק אינטואישן",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/130823.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "חד\"פ לאישה2 אינטואישן אקזקטה יח'7",
@@ -8062,43 +8062,43 @@
     },
     {
       "name": "שיק אינטואישן נשים סכינים שלישייה",
-      "barcode": "126823",
+      "barcode": "9312931720300",
       "sku": "126823",
       "brand": "שיק אינטואישן",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126823.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "שיק אינטואישן נשים סכינים2 + מכשיר",
-      "barcode": "126815",
+      "barcode": "9312931720294",
       "sku": "126815",
       "brand": "שיק אינטואישן",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126815.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "שיק אינטואישן סנסטיב נשים סכינים שלישייה",
-      "barcode": "126816",
+      "barcode": "6937266700785",
       "sku": "126816",
       "brand": "שיק אינטואישן",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126816.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     },
     {
       "name": "שיק אינטואישן סנסטיב נשים סכינים2 + מכשיר",
-      "barcode": "126819",
+      "barcode": "6937266700761",
       "sku": "126819",
       "brand": "שיק אינטואישן",
       "catalog": "2025",
       "page": 22,
       "image": "data/pdf-images/126819.jpg",
-      "barcode_source": "sku"
+      "barcode_source": "ean"
     }
   ]
 }

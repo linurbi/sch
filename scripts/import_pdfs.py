@@ -21,8 +21,8 @@ import cv2
 import numpy as np
 import pymupdf
 from PIL import Image
-import zxingcpp
 
+from barcodes import read_card_ean
 from catalog_text import BRAND_WORDS, clean_name, normalize_space
 
 
@@ -39,7 +39,6 @@ PDF_SOURCES = (
 # SKU/packing text is a separate positioned block above every product card.
 SKU_BLOCK_RE = re.compile(r"^(?P<sku>\d{5,6})\s+(?:\d+\s*-|1(?:\s|$))")
 STAND_RE = re.compile(r"(?:סטנד|דאמפ)")
-EAN_FORMATS = (zxingcpp.BarcodeFormat.EAN13, zxingcpp.BarcodeFormat.EAN8)
 
 
 @dataclass
@@ -113,33 +112,6 @@ def pixmap_bgr(page: pymupdf.Page, scale: float) -> np.ndarray:
     return cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
 
-def decode_ean(render: np.ndarray, anchor: tuple, scale: float) -> str | None:
-    x0, y0, x1, _y1 = anchor[:4]
-    crop = render[
-        int((y0 + 70) * scale) : int((y0 + 180) * scale),
-        max(0, int((x0 - 6) * scale)) : int((x1 + 6) * scale),
-    ]
-    if crop.size == 0:
-        return None
-    gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-    variants = (
-        gray,
-        cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1],
-    )
-    for image in variants:
-        results = zxingcpp.read_barcodes(
-            image,
-            formats=EAN_FORMATS,
-            try_rotate=True,
-            try_downscale=True,
-            try_invert=True,
-        )
-        for result in results:
-            if result.valid and result.text.isdigit():
-                return result.text
-    return None
-
-
 def save_card(render: np.ndarray, anchor: tuple, scale: float, sku: str) -> str:
     x0, y0, x1, _y1 = anchor[:4]
     crop = render[
@@ -172,7 +144,6 @@ def import_pdf(
     catalog: str,
     path: Path,
     known_skus: set[str],
-    known_eans: set[str],
     known_names: set[str],
 ) -> list[Product]:
     document = pymupdf.open(path)
@@ -202,11 +173,12 @@ def import_pdf(
         render = pixmap_bgr(page, render_scale)
         ean_count = 0
         for sku, anchor, name, brand in candidates:
-            ean = decode_ean(render, anchor, render_scale)
+            ean = read_card_ean(document, page, anchor)
             name_key = normalize_space(name).casefold()
-            # A product's SCH SKU can change between catalogs. Treat the EAN
-            # or an exact normalized product name as the same base product too.
-            if (ean and ean in known_eans) or name_key in known_names:
+            # A product's SCH SKU can change between catalogs, so an identical
+            # name means the same product. A shared EAN alone does not: the
+            # catalog prints one barcode on genuinely different variants.
+            if name_key in known_names:
                 known_skus.add(sku)
                 continue
             if ean:
@@ -226,8 +198,6 @@ def import_pdf(
             )
             known_skus.add(sku)
             known_names.add(name_key)
-            if ean:
-                known_eans.add(ean)
 
         print(
             f"  page {page_index + 1:02d}: "
@@ -253,12 +223,11 @@ def main() -> int:
             pass
 
     known_skus: set[str] = set()
-    known_eans: set[str] = set()
     known_names: set[str] = set()
     products: list[Product] = []
     source_counts: dict[str, int] = {}
     for catalog, path in PDF_SOURCES:
-        added = import_pdf(catalog, path, known_skus, known_eans, known_names)
+        added = import_pdf(catalog, path, known_skus, known_names)
         products.extend(added)
         source_counts[catalog] = len(added)
 
