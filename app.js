@@ -1,5 +1,6 @@
 const CART_KEY = "sch-order-cart-v1";
 const NAMES_KEY = "sch-order-names-v1";
+const SENDER_KEY = "sch-order-sender-v1";
 // Without a right-to-left mark a line that opens with digits or latin letters
 // flips direction in WhatsApp, which is what made the order hard to read.
 const RLM = "\u200f";
@@ -20,6 +21,7 @@ const els = {
   downloadTxt: document.getElementById("downloadTxt"),
   clearCart: document.getElementById("clearCart"),
   preview: document.getElementById("preview"),
+  sender: document.getElementById("sender"),
 };
 
 let products = [];
@@ -41,6 +43,10 @@ function saveCart() {
 
 function saveNames() {
   localStorage.setItem(NAMES_KEY, JSON.stringify(customNames));
+}
+
+function senderName() {
+  return els.sender.value.trim();
 }
 
 function displayName(product) {
@@ -83,10 +89,10 @@ function selectedItems() {
 function formatWhatsapp(items) {
   if (!items.length) return "אין מוצרים בהזמנה";
   const units = items.reduce((sum, item) => sum + item.quantity, 0);
-  const lines = [
-    "*הזמנה שסטוביץ*",
-    `${RLM}${items.length} מוצרים, ${units} יחידות בסך הכל`,
-  ];
+  const from = senderName();
+  const lines = ["*הזמנה שסטוביץ*"];
+  if (from) lines.push(`${RLM}מאת: ${from}`);
+  lines.push(`${RLM}${items.length} מוצרים, ${units} יחידות בסך הכל`);
   items.forEach((item, index) => {
     lines.push("");
     lines.push(`${RLM}*${index + 1}. ${item.name}*`);
@@ -97,7 +103,9 @@ function formatWhatsapp(items) {
 }
 
 function formatTsv(items) {
-  const rows = [["מוצר", "ברקוד", "כמות"]];
+  const from = senderName();
+  const rows = from ? [["מאת", from, ""]] : [];
+  rows.push(["מוצר", "ברקוד", "כמות"]);
   for (const item of items) {
     rows.push([item.name, item.barcode, String(item.quantity)]);
   }
@@ -267,6 +275,12 @@ function openCart(open) {
   els.drawer.hidden = !open;
   els.backdrop.hidden = !open;
 }
+
+els.sender.value = localStorage.getItem(SENDER_KEY) || "";
+els.sender.addEventListener("input", () => {
+  localStorage.setItem(SENDER_KEY, senderName());
+  renderCart();
+});
 
 els.search.addEventListener("input", render);
 els.cartToggle.addEventListener("click", () => openCart(true));

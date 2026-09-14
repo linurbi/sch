@@ -230,6 +230,27 @@ button {
   padding-bottom: 10px;
 }
 
+.sender {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sender input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.sender input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
 .cart-text {
   flex: 1;
   min-width: 0;
