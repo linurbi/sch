@@ -14,6 +14,8 @@ import requests
 from PIL import Image
 from rapidocr_onnxruntime import RapidOCR
 
+from catalog_text import clean_name, normalize_space
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 IMAGE_DIR = DATA_DIR / "images"
@@ -88,10 +90,6 @@ def unescape_basic(text: str) -> str:
         .replace("&lt;", "<")
         .replace("&gt;", ">")
     )
-
-
-def normalize_space(text: str) -> str:
-    return re.sub(r"\s+", " ", text).strip()
 
 
 def ean13_valid(code: str) -> bool:
@@ -207,19 +205,6 @@ def parse_products(text: str, brand: str) -> list[dict]:
             continue
         items.append({"name": name, "sku": sku, "brand": brand})
     return items
-
-
-def clean_name(name: str, brand: str) -> str:
-    name = normalize_space(name)
-    name = re.sub(r"^חדש!+\s*", "", name)
-    name = re.sub(r"\s*חדש!+\s*", " ", name)
-    if brand:
-        pattern = re.compile(rf"^(?:{re.escape(brand)}\s*)+", re.I)
-        collapsed = pattern.sub(brand + " ", name)
-        if collapsed != name:
-            name = collapsed
-    name = re.sub(r"\s+", " ", name).strip(" -|/\\")
-    return name
 
 
 def is_stand(name: str, sku: str) -> bool:

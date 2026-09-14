@@ -43,11 +43,18 @@
       </div>
       <div class="cart-items" id="cartItems"></div>
       <div class="drawer-actions">
-        <button type="button" class="primary" id="copyWhatsapp">העתקה לוואטסאפ</button>
-        <button type="button" id="copyTsv">העתקה כטבלה</button>
+        <button type="button" class="primary" id="copyWhatsapp">
+          העתקה לוואטסאפ
+        </button>
+        <button type="button" id="copyTsv" title="שורות עם טאבים - להדבקה באקסל, לא בוואטסאפ">
+          העתקה לאקסל
+        </button>
         <button type="button" id="downloadTxt">הורדת קובץ</button>
         <button type="button" class="danger text-btn" id="clearCart">ריקון</button>
       </div>
+      <p class="hint">
+        הטקסט למטה הוא מה שיישלח בוואטסאפ. אפשר לתקן שם מוצר ברשימה שמעל.
+      </p>
       <pre class="preview" id="preview"></pre>
     </aside>
     <div class="backdrop" id="backdrop" hidden></div>

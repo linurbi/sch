@@ -230,8 +230,35 @@ button {
   padding-bottom: 10px;
 }
 
-.cart-row strong {
-  display: block;
+.cart-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.name-edit {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 4px 6px;
+  background: #f2f5f8;
+  font-weight: 700;
+}
+
+.name-edit:focus {
+  border-color: var(--accent);
+  background: #fff;
+  outline: none;
+}
+
+.no-name {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.hint {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .drawer-actions {

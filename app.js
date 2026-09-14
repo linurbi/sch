@@ -1,4 +1,8 @@
 const CART_KEY = "sch-order-cart-v1";
+const NAMES_KEY = "sch-order-names-v1";
+// Without a right-to-left mark a line that opens with digits or latin letters
+// flips direction in WhatsApp, which is what made the order hard to read.
+const RLM = "\u200f";
 
 const els = {
   search: document.getElementById("search"),
@@ -20,11 +24,12 @@ const els = {
 
 let products = [];
 let brandFilter = "";
-let cart = loadCart();
+let cart = loadStore(CART_KEY);
+let customNames = loadStore(NAMES_KEY);
 
-function loadCart() {
+function loadStore(key) {
   try {
-    return JSON.parse(localStorage.getItem(CART_KEY) || "{}");
+    return JSON.parse(localStorage.getItem(key) || "{}");
   } catch {
     return {};
   }
@@ -32,6 +37,26 @@ function loadCart() {
 
 function saveCart() {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
+}
+
+function saveNames() {
+  localStorage.setItem(NAMES_KEY, JSON.stringify(customNames));
+}
+
+function displayName(product) {
+  return (customNames[product.barcode] || product.name || "").trim();
+}
+
+function isUnnamed(product) {
+  const name = displayName(product);
+  return !name || name === product.brand.trim();
+}
+
+function setCustomName(barcode, name) {
+  const clean = name.trim();
+  if (clean) customNames[barcode] = clean;
+  else delete customNames[barcode];
+  saveNames();
 }
 
 function qtyOf(barcode) {
@@ -48,19 +73,27 @@ function setQty(barcode, qty) {
 function selectedItems() {
   return products
     .filter((p) => qtyOf(p.barcode) > 0)
-    .map((p) => ({ ...p, quantity: qtyOf(p.barcode) }));
+    .map((p) => ({
+      ...p,
+      name: displayName(p) || p.brand || "מוצר",
+      quantity: qtyOf(p.barcode),
+    }));
 }
 
 function formatWhatsapp(items) {
   if (!items.length) return "אין מוצרים בהזמנה";
-  const lines = ["הזמנה שסטוביץ", ""];
-  for (const item of items) {
-    lines.push(item.name);
-    lines.push(`ברקוד: ${item.barcode}`);
-    lines.push(`כמות: ${item.quantity}`);
+  const units = items.reduce((sum, item) => sum + item.quantity, 0);
+  const lines = [
+    "*הזמנה שסטוביץ*",
+    `${RLM}${items.length} מוצרים, ${units} יחידות בסך הכל`,
+  ];
+  items.forEach((item, index) => {
     lines.push("");
-  }
-  return lines.join("\n").trim();
+    lines.push(`${RLM}*${index + 1}. ${item.name}*`);
+    lines.push(`${RLM}ברקוד: ${item.barcode}`);
+    lines.push(`${RLM}כמות: ${item.quantity}`);
+  });
+  return lines.join("\n");
 }
 
 function formatTsv(items) {
@@ -106,7 +139,7 @@ function visibleProducts() {
     if (brandFilter && p.brand !== brandFilter) return false;
     if (!q) return true;
     return (
-      p.name.toLowerCase().includes(q) ||
+      displayName(p).toLowerCase().includes(q) ||
       p.barcode.includes(q) ||
       (p.sku && p.sku.includes(q))
     );
@@ -173,12 +206,16 @@ function renderGrid() {
     card.addEventListener("click", () => setQty(product.barcode, qtyOf(product.barcode) + 1));
     const img = document.createElement("img");
     img.src = product.image;
-    img.alt = product.name;
+    img.alt = displayName(product);
     img.loading = "lazy";
     const body = document.createElement("div");
     body.className = "card-body";
     const title = document.createElement("h3");
-    title.textContent = product.name;
+    title.textContent = displayName(product);
+    if (isUnnamed(product)) {
+      title.classList.add("no-name");
+      title.textContent = `${displayName(product)} — ללא שם בקטלוג`;
+    }
     const code = document.createElement("div");
     code.className = "barcode";
     code.textContent = product.barcode;
@@ -200,7 +237,19 @@ function renderCart() {
       const row = document.createElement("div");
       row.className = "cart-row";
       const text = document.createElement("div");
-      text.innerHTML = `<strong>${item.name}</strong><span class="barcode">${item.barcode}</span>`;
+      text.className = "cart-text";
+      const name = document.createElement("input");
+      name.className = "name-edit";
+      name.value = item.name;
+      name.title = "אפשר לתקן את שם המוצר לפני השליחה";
+      name.addEventListener("change", () => {
+        setCustomName(item.barcode, name.value);
+        render();
+      });
+      const code = document.createElement("span");
+      code.className = "barcode";
+      code.textContent = item.barcode;
+      text.append(name, code);
       row.append(text, qtyControls(item.barcode));
       els.cartItems.appendChild(row);
     }
