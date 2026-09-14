@@ -22,6 +22,7 @@ const els = {
   clearCart: document.getElementById("clearCart"),
   preview: document.getElementById("preview"),
   sender: document.getElementById("sender"),
+  toTop: document.getElementById("toTop"),
 };
 
 let products = [];
@@ -273,11 +274,19 @@ function render() {
   renderBrands();
   renderGrid();
   renderCart();
+  updateToTop();
 }
 
 function openCart(open) {
   els.drawer.hidden = !open;
   els.backdrop.hidden = !open;
+  updateToTop();
+}
+
+function updateToTop() {
+  if (!els.toTop) return;
+  const cartOpen = !els.drawer.hidden;
+  els.toTop.hidden = cartOpen || window.scrollY < 400;
 }
 
 if (els.sender) {
@@ -289,6 +298,10 @@ if (els.sender) {
 }
 
 els.search.addEventListener("input", render);
+window.addEventListener("scroll", updateToTop, { passive: true });
+els.toTop?.addEventListener("click", () =>
+  window.scrollTo({ top: 0, behavior: "smooth" })
+);
 els.cartToggle.addEventListener("click", () => openCart(true));
 els.closeCart.addEventListener("click", () => openCart(false));
 els.backdrop.addEventListener("click", () => openCart(false));

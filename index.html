@@ -6,7 +6,7 @@
     <title>הזמנת שסטוביץ</title>
     <!-- Bump the version when styles.css or app.js change, otherwise browsers
          keep serving the copy GitHub Pages told them to cache. -->
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <header class="top">
@@ -15,7 +15,7 @@
         <h1>בחירת מוצרים להזמנה</h1>
       </div>
       <button type="button" class="cart-toggle" id="cartToggle">
-        ההזמנה
+        העגלה שלי
         <span class="badge" id="cartCount">0</span>
       </button>
     </header>
@@ -40,7 +40,7 @@
 
     <aside class="drawer" id="drawer" hidden>
       <div class="drawer-head">
-        <h2>ההזמנה</h2>
+        <h2>העגלה שלי</h2>
         <button type="button" class="text-btn" id="closeCart">סגירה</button>
       </div>
       <label class="sender">
@@ -70,6 +70,11 @@
     </aside>
     <div class="backdrop" id="backdrop" hidden></div>
 
-    <script src="app.js?v=3" type="module"></script>
+    <button type="button" class="to-top" id="toTop" hidden>
+      <span aria-hidden="true">↑</span>
+      חזרה למעלה
+    </button>
+
+    <script src="app.js?v=4" type="module"></script>
   </body>
 </html>

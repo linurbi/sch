@@ -327,6 +327,31 @@ button {
   z-index: 15;
 }
 
+.to-top {
+  position: fixed;
+  inset-inline-start: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.to-top[hidden] {
+  display: none;
+}
+
 .toast {
   position: fixed;
   inset-inline: 0;
@@ -350,5 +375,7 @@ button {
 
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    /* Room for the floating button so it never covers the last row. */
+    padding-bottom: 96px;
   }
 }
