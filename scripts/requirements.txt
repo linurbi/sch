@@ -1,4 +1,6 @@
 pillow
 opencv-python-headless
+pymupdf
 rapidocr-onnxruntime
 requests
+zxing-cpp

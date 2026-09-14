@@ -13,7 +13,7 @@ BRAND_WORDS = {
     "הירו", "וניה", "טודיי", "לוקיטוס", "לנדוור", "לרו", "ליידי ספיד סטיק",
     "מאסטר שף", "מנה", "מקס ברנר", "מרבה", "מריטו", "מרידול", "ניוטרוג'ינה",
     "סטרימר", "סלימדליס", "ספיד סטיק", "פוף", "פולרטי", "פומפדור", "פלמוליב",
-    "פרי", "צ'וקטה", "צ'וקטה סולטי", "צ'וקטה קידס", "קולגייט", "קוקי",
+    "פרי", "פרפקט טד", "צ'וקטה", "צ'וקטה סולטי", "צ'וקטה קידס", "קולגייט", "קוקי",
     "קראנצ'וס", "קרפרי", "ריו מרה", "שיק", "שיק אינטואישן",
 }
 
@@ -52,6 +52,13 @@ def strip_duplicate_brand(name: str) -> str:
 
 def clean_name(name: str, brand: str) -> str:
     name = normalize_quotes(normalize_space(name))
+    # Some catalog fonts map a decorative vegan/new-product glyph to an
+    # invalid Unicode character when PyMuPDF extracts the text layer.
+    name = name.replace("\ufffd", " ").replace("Ŭ", " ")
+    name = name.replace("|", " ")
+    # In three Ajax labels the RTL text layer moves the "-7" from
+    # "עוצמת ה-7" to the start of the extracted line.
+    name = re.sub(r"^7-(.+?עוצמת ה)\s*", r"\1-7 ", name)
     name = re.sub(r"\s*חדש!+\s*", " ", name)
     # Spread headers such as "אג'קס // פלמוליב" get glued to the first product name.
     name = re.sub(r"^.*?//\s*", "", name)

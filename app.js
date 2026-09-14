@@ -86,6 +86,10 @@ function selectedItems() {
     }));
 }
 
+function identifierLabel(product) {
+  return product.barcode_source === "sku" ? 'מק"ט' : "ברקוד";
+}
+
 function formatWhatsapp(items) {
   if (!items.length) return "אין מוצרים בהזמנה";
   const units = items.reduce((sum, item) => sum + item.quantity, 0);
@@ -96,7 +100,7 @@ function formatWhatsapp(items) {
   items.forEach((item, index) => {
     lines.push("");
     lines.push(`${RLM}*${index + 1}. ${item.name}*`);
-    lines.push(`${RLM}ברקוד: ${item.barcode}`);
+    lines.push(`${RLM}${identifierLabel(item)}: ${item.barcode}`);
     lines.push(`${RLM}כמות: ${item.quantity}`);
   });
   return lines.join("\n");
@@ -105,7 +109,7 @@ function formatWhatsapp(items) {
 function formatTsv(items) {
   const from = senderName();
   const rows = from ? [["מאת", from, ""]] : [];
-  rows.push(["מוצר", "ברקוד", "כמות"]);
+  rows.push(["מוצר", 'ברקוד / מק"ט', "כמות"]);
   for (const item of items) {
     rows.push([item.name, item.barcode, String(item.quantity)]);
   }
@@ -226,7 +230,7 @@ function renderGrid() {
     }
     const code = document.createElement("div");
     code.className = "barcode";
-    code.textContent = product.barcode;
+    code.textContent = `${identifierLabel(product)}: ${product.barcode}`;
     body.append(title, code, qtyControls(product.barcode));
     card.append(img, body);
     els.grid.appendChild(card);
@@ -256,7 +260,7 @@ function renderCart() {
       });
       const code = document.createElement("span");
       code.className = "barcode";
-      code.textContent = item.barcode;
+      code.textContent = `${identifierLabel(item)}: ${item.barcode}`;
       text.append(name, code);
       row.append(text, qtyControls(item.barcode));
       els.cartItems.appendChild(row);

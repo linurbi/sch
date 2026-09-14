@@ -6,7 +6,7 @@ import json
 import sys
 from pathlib import Path
 
-from catalog_text import clean_name, scrub_ocr_name
+from catalog_text import clean_name
 
 PRODUCTS_PATH = Path(__file__).resolve().parents[1] / "data" / "products.json"
 
@@ -15,7 +15,7 @@ def main() -> int:
     data = json.loads(PRODUCTS_PATH.read_text(encoding="utf-8"))
     changed = 0
     for product in data["products"]:
-        tidy = scrub_ocr_name(clean_name(product["name"], product.get("brand", "")), product.get("brand", ""))
+        tidy = clean_name(product["name"], product.get("brand", ""))
         if tidy and tidy != product["name"]:
             print(f"  {product['name']}  ->  {tidy}")
             product["name"] = tidy
