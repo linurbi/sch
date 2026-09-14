@@ -14,7 +14,7 @@ import requests
 from PIL import Image
 from rapidocr_onnxruntime import RapidOCR
 
-from catalog_text import clean_name, is_ocr_noise, normalize_space
+from catalog_text import BRAND_WORDS, clean_name, is_ocr_noise, normalize_space
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -208,8 +208,16 @@ def parse_products(text: str, brand: str) -> list[dict]:
         sku = match.group("sku")
         if not name or is_stand(name, sku):
             continue
-        items.append({"name": name, "sku": sku, "brand": brand})
+        items.append({"name": name, "sku": sku, "brand": infer_brand(name, brand)})
     return items
+
+
+def infer_brand(name: str, fallback: str) -> str:
+    normalized = clean_name(name, "")
+    for candidate in sorted(BRAND_WORDS, key=len, reverse=True):
+        if normalized == candidate or normalized.startswith(candidate + " "):
+            return candidate
+    return fallback.split("/")[0].strip()
 
 
 def is_stand(name: str, sku: str) -> bool:
@@ -252,7 +260,9 @@ def sort_tiles_rtl(
 
 
 def spread_from_image(image_no: int) -> tuple[int, int]:
-    return image_no * 2 - 2, image_no * 2 - 1
+    # FlipBuilder image 3 contains printed pages 6–7, image 55 contains
+    # pages 110–111, and so on.
+    return image_no * 2, image_no * 2 + 1
 
 
 def ocr_ean_from_tile(bgr: np.ndarray, footer: tuple[int, int, int, int], ocr: RapidOCR) -> str | None:
@@ -267,6 +277,32 @@ def ocr_ean_from_tile(bgr: np.ndarray, footer: tuple[int, int, int, int], ocr: R
     Image.fromarray(rgb).save(tmp, quality=95)
     result, _ = ocr(str(tmp))
     texts = [item[1] for item in result] if result else []
+    return find_ean(texts)
+
+
+def page_ocr_results(
+    image_path: Path, ocr: RapidOCR
+) -> list[tuple[float, float, str]]:
+    """OCR a spread once and retain each text box's center and text."""
+    result, _ = ocr(str(image_path))
+    positioned: list[tuple[float, float, str]] = []
+    for box, text, _score in result or []:
+        xs = [float(point[0]) for point in box]
+        ys = [float(point[1]) for point in box]
+        positioned.append((sum(xs) / len(xs), sum(ys) / len(ys), text))
+    return positioned
+
+
+def ean_from_page_results(
+    positioned: list[tuple[float, float, str]],
+    footer: tuple[int, int, int, int],
+) -> str | None:
+    x, y, w, _h = footer
+    texts = [
+        text
+        for cx, cy, text in positioned
+        if x - 20 <= cx <= x + w + 20 and y - 210 <= cy <= y + 12
+    ]
     return find_ean(texts)
 
 
@@ -317,6 +353,23 @@ def paragraph_for_image(
         if left in pages or right in pages:
             return text
     return None
+
+
+def spread_paragraph(cat_id: str, image_no: int, fallback: list[str]) -> str | None:
+    """Read the spread's own HTML, which includes text omitted by the homepage."""
+    left, right = spread_from_image(image_no)
+    route = f"{right}-{left}"
+    url = f"https://www.sch.co.il/catalog{cat_id}/{route}/"
+    try:
+        html = get_bytes(url).decode("utf-8", "replace")
+        paragraphs, _toc = parse_html(html)
+        # Individual spread pages contain one product paragraph.
+        candidates = [p for p in paragraphs if SKU_PACK_RE.search(p)]
+        if candidates:
+            return max(candidates, key=len)
+    except requests.RequestException:
+        pass
+    return paragraph_for_image(fallback, image_no)
 
 
 def name_from_ocr_texts(texts: list[str], brand: str) -> str:
@@ -372,7 +425,7 @@ def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
         brand = brand_for_page(toc, right) or brand_for_page(toc, left)
         if brand in SKIP_BRANDS:
             continue
-        paragraph = paragraph_for_image(paragraphs, image_no)
+        paragraph = spread_paragraph(cat_id, image_no, paragraphs)
         named = parse_products(paragraph, brand) if paragraph else []
 
         cache_path = CACHE_DIR / cat_id / f"page{image_no:04d}.jpg"
@@ -392,10 +445,11 @@ def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
         if not footers:
             continue
 
-        decoded: list[tuple[tuple[int, int, int, int], str | None]] = []
-        for footer in footers:
-            ean = ocr_ean_from_tile(bgr, footer, ocr)
-            decoded.append((footer, ean))
+        positioned = page_ocr_results(cache_path, ocr)
+        decoded = [
+            (footer, ean_from_page_results(positioned, footer))
+            for footer in footers
+        ]
 
         usable = [(box, ean) for box, ean in decoded if ean]
         print(
@@ -405,9 +459,9 @@ def process_catalog(cat_id: str, ocr: RapidOCR) -> list[Product]:
         )
 
         used_barcodes: set[str] = set()
-        # Same-spread zip is safe even when the counts differ: leftover tiles
-        # get a name from the product photo instead of a blank brand label.
-        for (footer, ean), info in zip(usable, named):
+        # Pair against every detected tile, including a tile whose barcode OCR
+        # failed. Removing failed tiles first shifts every subsequent name.
+        for (footer, ean), info in zip(decoded, named):
             if not ean or ean in used_barcodes:
                 continue
             used_barcodes.add(ean)
@@ -454,6 +508,23 @@ def name_quality(product: Product) -> int:
     return len(name)
 
 
+def apply_known_brand_rules(product: Product) -> Product:
+    """Correct shared spreads using manufacturer barcode prefixes."""
+    if product.barcode.startswith(("800226", "860226")):
+        product.brand = "פולרטי"
+        product.name = "פולרטי חטיפי קרח ללא גלוטן"
+    elif product.barcode.startswith("57900005"):
+        product.brand = "דריזלישס"
+        product.name = "דריזלישס מיני פריכיות אורז"
+    elif product.barcode.startswith("72901129"):
+        product.brand = "מקס ברנר"
+    # Barcode confirmed from the catalog artwork supplied by the user.
+    if product.barcode == "8718951722507":
+        product.brand = "פלמוליב"
+        product.name = 'פלמוליב סבון נוזלי חלב שקדים מ"ל 750'
+    return product
+
+
 def merge_products(all_products: list[Product]) -> list[Product]:
     by_barcode: dict[str, Product] = {}
     for product in all_products:
@@ -471,7 +542,7 @@ def merge_products(all_products: list[Product]) -> list[Product]:
         elif better_name:
             current.name = product.name
             current.sku = current.sku or product.sku
-    items = list(by_barcode.values())
+    items = [apply_known_brand_rules(item) for item in by_barcode.values()]
     items.sort(key=lambda p: (p.brand, p.name, p.barcode))
     return items
 
