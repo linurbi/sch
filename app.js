@@ -46,7 +46,7 @@ function saveNames() {
 }
 
 function senderName() {
-  return els.sender.value.trim();
+  return (els.sender?.value || "").trim();
 }
 
 function displayName(product) {
@@ -276,11 +276,13 @@ function openCart(open) {
   els.backdrop.hidden = !open;
 }
 
-els.sender.value = localStorage.getItem(SENDER_KEY) || "";
-els.sender.addEventListener("input", () => {
-  localStorage.setItem(SENDER_KEY, senderName());
-  renderCart();
-});
+if (els.sender) {
+  els.sender.value = localStorage.getItem(SENDER_KEY) || "";
+  els.sender.addEventListener("input", () => {
+    localStorage.setItem(SENDER_KEY, senderName());
+    renderCart();
+  });
+}
 
 els.search.addEventListener("input", render);
 els.cartToggle.addEventListener("click", () => openCart(true));

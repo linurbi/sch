@@ -292,6 +292,16 @@ button {
   padding: 10px 12px;
 }
 
+.drawer-actions .primary {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+
+.drawer-actions .text-btn {
+  background: transparent;
+}
+
 .danger {
   color: var(--danger);
 }
